@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+
+import Layout from "./Components/Pages/Layout/Layout"
+import Home from "./Components/Pages/Home/Home"
+import ESR from "./Components/Pages/ESR/ESR"
+import History from "./Components/Pages/History/History"
+import Sustentability from "./Components/Pages/Sustentability/Sustentability"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />} className="App">
+            <Route index element={<Home />} />
+            <Route path="esr" element={<ESR />} />
+            <Route path="history" element={<History />} />
+            <Route path="sustentability" element={<Sustentability />} />
+          </Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
