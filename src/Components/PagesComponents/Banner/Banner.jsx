@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export default function Banner() {
+import './Banner.css';
+
+export default function Banner({ img }) {
   return (
-    <div>Banner</div>
-  )
+    <div className="banner_container">
+      <img className="banner__image" src={ img } alt="Grupo Requiez - Banner" />
+    </div>
+  );
 }
