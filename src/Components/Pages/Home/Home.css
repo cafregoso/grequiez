@@ -1,0 +1,21 @@
+.text-box {
+    height: 550px;
+    background: #315F56;
+    margin-top: 55px;
+    display: grid;
+    place-content: center;
+}
+
+.text-box_p {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.text-box_hr {
+    height: 8px;
+    width: 350px;
+    background: #99C1B9;
+    border: none;
+}

@@ -1,5 +1,12 @@
 .navbar-bg {
     background: #FFF !important;
-    width: 98% !important;
-    margin: 10px auto;
+    margin: 0 auto 20px auto;
+}
+
+.colorLetter {
+    color: #616260 !important;
+}
+
+.nav-links {
+    justify-content: flex-end;
 }

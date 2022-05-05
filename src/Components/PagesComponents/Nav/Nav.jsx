@@ -29,9 +29,12 @@ const Nav = () => {
   return (
     <AppBar position="static" className='navbar-bg'>
       <Container maxWidth="xl">
-        <Toolbar disableGutters> 
+        <Toolbar disableGutters className=''> 
         <img style={ { maxWidth: '250px' } } alt="Grupo Requiez - Logo" src={ logo } />
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box 
+            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+            className='nav-links'
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -39,6 +42,7 @@ const Nav = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              className='colorLetter'
             >
               <MenuIcon />
             </IconButton>
@@ -61,24 +65,28 @@ const Nav = () => {
               }}
             >
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link to='/'>Inicio</Link></Typography>
+                <Typography textAlign="center"><Link className='colorLetter' to='/'>Inicio</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link to='/esr'>Ver Registros</Link></Typography>
+                <Typography textAlign="center"><Link className='colorLetter' to='/esr'>Ver Registros</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link to='/history'>Crear Producto</Link></Typography>
+                <Typography textAlign="center"><Link className='colorLetter' to='/history'>Crear Producto</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link to='/sustentability'>Crear Ubicacion</Link></Typography>
+                <Typography textAlign="center"><Link className='colorLetter' to='/sustentability'>Crear Ubicacion</Link></Typography>
               </MenuItem>
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box 
+            sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}
+            className='nav-links'
+          >
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 component={ Link }
+                className='colorLetter'
                 to='/'
               >
                 Inicio
@@ -87,25 +95,28 @@ const Nav = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 component={ Link }
+                className='colorLetter'
                 to='/esr'
               >
-                Ver Registros
+                ESR
               </Button>
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 component={ Link }
+                className='colorLetter'
                 to='/history'
               >
-                Crear Producto
+                Nuestra Historia
               </Button>
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 component={ Link }
+                className='colorLetter'
                 to='/sustentability'
               >
-                Crear Ubicacion
+                Sustentabilidad
               </Button>
           </Box>
         </Toolbar>
