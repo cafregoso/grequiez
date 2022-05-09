@@ -30,7 +30,7 @@ const Nav = () => {
     <AppBar position="static" className='navbar-bg'>
       <Container maxWidth="xl">
         <Toolbar disableGutters className=''> 
-        <img style={ { maxWidth: '250px' } } alt="Grupo Requiez - Logo" src={ logo } />
+        <img style={ { maxWidth: '200px' } } alt="Grupo Requiez - Logo" src={ logo } />
           <Box 
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
             className='nav-links'
