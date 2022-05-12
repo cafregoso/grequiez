@@ -19,3 +19,9 @@
     background: #99C1B9;
     border: none;
 }
+
+.home-container_brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

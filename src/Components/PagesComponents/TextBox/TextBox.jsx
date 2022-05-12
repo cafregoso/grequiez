@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function TextBox({ children }) {
+export default function TextBox({ text, color }) {
   return (
-    <div>
-      <p>{ children }</p>
+    <div style={{ 
+        backgroundColor: { color },
+
+    }}>
+        { text }
     </div>
   )
 }

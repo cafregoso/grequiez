@@ -1,11 +1,13 @@
 import React from 'react'
 import Banner from '../../PagesComponents/Banner/Banner'
 import Space from '../../PagesComponents/Space/Space'
+import InfoCard from '../../PagesComponents/InfoCard/InfoCard'
 
 import banner from '../../../assets/banner.webp'
 import imageMision from '../../../assets/re.webp'
 
 import './Home.css'
+import brands from '../../../brands.json'
 
 export default function Home() {
   return (
@@ -29,6 +31,15 @@ export default function Home() {
           tecnología y capacitación de vanguardia.'
         color='#FFF'
       />
+      <div className='home-container_brands'>
+        {
+          brands.map(({ id, img, desc }) => {
+            return (
+              <InfoCard key={ id } image={ img } info={ desc } />
+            )
+          })
+        }
+      </div>
     </div>
   )
 }
