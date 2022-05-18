@@ -3,8 +3,13 @@
     margin: 10px 25px;
 }
 
-
+.info-container_img {
+    border: solid 1px #000;
+    border-radius: 150px 0 150px 0;
+}
 
 .info-container_img img {
     width: 100%;
+    border-radius: 150px 0 150px 0;
+    overflow: hidden;
 }

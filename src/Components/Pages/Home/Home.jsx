@@ -11,7 +11,7 @@ import brands from '../../../brands.json'
 
 export default function Home() {
   return (
-    <div>
+    <div className='home-container'>
       <Banner img={ banner } />
       <div className='text-box'>
         <p className='text-box_p'>Somos un grupo de cinco marcas con soluciones mobiliarias <br />para proyectos de oficina, contract y hospitality.</p>
@@ -31,6 +31,7 @@ export default function Home() {
           tecnología y capacitación de vanguardia.'
         color='#FFF'
       />
+      <h2 className='home-container_subtitle'>NUESTRAS MARCAS</h2>
       <div className='home-container_brands'>
         {
           brands.map(({ id, img, desc }) => {

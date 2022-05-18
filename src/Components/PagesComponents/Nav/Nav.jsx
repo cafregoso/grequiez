@@ -28,7 +28,7 @@ const Nav = () => {
 
   return (
     <AppBar position="static" className='navbar-bg'>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" className='navbar-container'>
         <Toolbar disableGutters className=''> 
         <img style={ { maxWidth: '200px' } } alt="Grupo Requiez - Logo" src={ logo } />
           <Box 
@@ -68,13 +68,22 @@ const Nav = () => {
                 <Typography textAlign="center"><Link className='colorLetter' to='/'>Inicio</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link className='colorLetter' to='/esr'>Ver Registros</Link></Typography>
+                <Typography textAlign="center"><Link className='colorLetter' to='/esr'>ESR</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link className='colorLetter' to='/history'>Crear Producto</Link></Typography>
+                <Typography textAlign="center"><Link className='colorLetter' to='#brands'>MARCAS</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link className='colorLetter' to='/sustentability'>Crear Ubicacion</Link></Typography>
+                <Typography textAlign="center"><Link className='colorLetter' to='/history'>Nuestra Historia</Link></Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center"><Link className='colorLetter' to='/sustentability'>Sustentabilidad</Link></Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center"><Link className='colorLetter' to='/blog'>BLOG</Link></Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center"><Link className='colorLetter' to='/contact'>CONTACTO</Link></Typography>
               </MenuItem>
             </Menu>
           </Box>
@@ -90,6 +99,15 @@ const Nav = () => {
                 to='/'
               >
                 Inicio
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+                component={ Link }
+                className='colorLetter'
+                to='#brands'
+              >
+                MARCAS
               </Button>
               <Button
                 onClick={handleCloseNavMenu}
@@ -117,6 +135,24 @@ const Nav = () => {
                 to='/sustentability'
               >
                 Sustentabilidad
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+                component={ Link }
+                className='colorLetter'
+                to='/blog'
+              >
+                BLOG
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+                component={ Link }
+                className='colorLetter'
+                to='/contact'
+              >
+                CONTACTO
               </Button>
           </Box>
         </Toolbar>

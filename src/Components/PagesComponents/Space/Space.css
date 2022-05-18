@@ -1,5 +1,5 @@
 .space {
-    padding: 30px 35px;
+    padding: 80px 35px;
     background: #EEE;
 }
 
@@ -21,19 +21,23 @@
     background: #EEE;
 }
 
+.space-text div {
+    max-width: 800px;
+}
+
 .container-h3 {    
     width: 70%;
     margin: auto;
     color: #315F56;
     padding-bottom: 20px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .container-pgh {
     width: 70%;
     margin: auto;
     color: #616260;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 @media (max-width: 980px) {

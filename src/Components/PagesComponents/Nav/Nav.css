@@ -1,12 +1,13 @@
 .navbar-bg {
     background: #FFF !important;
-    margin: 0 auto 20px auto;
+    margin-bottom: 20px;
 }
 
 .colorLetter {
     color: #616260 !important;
+    font-weight: bold !important;
 }
 
 .nav-links {
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }

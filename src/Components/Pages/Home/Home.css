@@ -1,5 +1,10 @@
+.home-container {
+    margin-top: 50px;
+    padding: 0 80px;
+}
+
 .text-box {
-    height: 550px;
+    height: 650px;
     background: #315F56;
     margin-top: 55px;
     display: grid;
@@ -20,8 +25,14 @@
     border: none;
 }
 
+.home-container_subtitle {
+    color: #315F56;
+    font-size: 50px;
+    padding: 35px 0px;
+}
+
 .home-container_brands {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
