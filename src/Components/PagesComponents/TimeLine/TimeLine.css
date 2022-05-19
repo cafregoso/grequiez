@@ -1,0 +1,30 @@
+.datefont-personal {
+    color: #000 !important;
+    font-size: 25px !important;
+}
+
+.vertical-timeline-element-content {
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.container-info {
+    display: grid;
+    place-items: center;
+}
+
+.vertical-timeline-element-title {
+    width: auto !important;
+}
+
+.image-square {
+    width: 250px;
+    height: 250px;
+    background: #bbb;
+    display: inline-block;
+}
+
+.container-info-time {
+    display: flex;
+    justify-content: space-between;
+}

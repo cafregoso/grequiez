@@ -31,7 +31,7 @@ export default function Home() {
           tecnología y capacitación de vanguardia.'
         color='#FFF'
       />
-      <h2 className='home-container_subtitle'>NUESTRAS MARCAS</h2>
+      <h2 className='home-container_subtitle' id='brands'>NUESTRAS MARCAS</h2>
       <div className='home-container_brands'>
         {
           brands.map(({ id, img, desc }) => {
