@@ -28,7 +28,7 @@
 .container-h3 {    
     width: 70%;
     margin: auto;
-    color: #315F56;
+    color: var(--color-verdeoscuro);
     padding-bottom: 20px;
     font-size: 40px;
 }
@@ -36,7 +36,7 @@
 .container-pgh {
     width: 70%;
     margin: auto;
-    color: #616260;
+    color: var(--color-gris);
     font-size: 30px;
 }
 

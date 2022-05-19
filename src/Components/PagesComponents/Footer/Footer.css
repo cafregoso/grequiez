@@ -1,12 +1,12 @@
 footer {
-    background: #a3a3a3;
+    background: var(--color-verdeoscuro);
     box-sizing: border-box;
     margin-top: 20px;
     padding: 0;;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     font-family: 'Noto Sans', sans-serif;
-    height: 150px;
+    height: 350px;
 }
 
 .coryright {
@@ -16,7 +16,7 @@ footer {
 }
 
 .coryright p {
-    margin: 0;
+    margin: 50px 0;
     color: #FFF;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -28,15 +28,20 @@ footer {
     font-family: 'Noto Sans', sans-serif;
 }
 
+.contact-social {
+    margin-top: 30px;
+}
+
 .contact-info p {
-    margin: 0;
+    margin: 20px auto0;
 }
 
 .contact-info h3 {
     margin-bottom: 0;
     color: #FFF;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 20px;
+    padding-bottom: 30px;
 }
 
 .contact-info a {
@@ -50,10 +55,33 @@ footer {
     text-decoration: underline;
 }
 
-.social {
+.newsletter {
     display: flex;
     place-items: center;
     width: auto;
+    padding-left: 60px;
+}
+
+.newsletter p {
+    color: #FFF;
+    font-size: 24px;
+    margin: auto;
+}
+
+.newsletter input {
+    display: block;
+    margin: 15px 0;
+    border: none;
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.newsletter-button {
+    font-size: 16px;
+    background: #eaebed;
+    color: var(--color-gris);
+    cursor: pointer;
 }
 
 @media (max-width: 900px) {
@@ -90,13 +118,13 @@ footer {
         font-size: .8rem;
     }
     
-    .social {
+    .newsletter {
         width: 100%;
         display: grid;
         place-items: center;
     }
     
     .footer-icon {
-        font-size: 2rem !important;
+        font-size: 20px !important;
     }
 }

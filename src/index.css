@@ -8,7 +8,9 @@ body {
   box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  --color-verdeoscuro: #315F56;
+  --color-gris: #616260;
+  --color-verdeclaro: #99C1B9;
+  --color-beige: #EFEDE7;
 }

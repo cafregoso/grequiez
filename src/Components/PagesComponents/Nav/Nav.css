@@ -4,7 +4,7 @@
 }
 
 .colorLetter {
-    color: #616260 !important;
+    color: var(--color-gris) !important;
     font-weight: bold !important;
 }
 
