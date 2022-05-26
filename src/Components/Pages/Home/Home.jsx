@@ -8,16 +8,18 @@ import imageMision from '../../../assets/re.webp'
 
 import './Home.css'
 import brands from '../../../brands.json'
+import TextBox from '../../PagesComponents/TextBox/TextBox'
 
 export default function Home() {
   return (
     <div className='home-container'>
       <Banner img={ banner } />
-      <div className='text-box'>
-        <p className='text-box_p'>Somos un grupo de cinco marcas con soluciones mobiliarias <br />para proyectos de oficina, contract y hospitality.</p>
-        <p className='text-box_p'>Cada una cuenta con una esencia <br />y personalidad propia, ofreciendo una extensa gama de <br />acabados y colores que nos mantienen en tendencia.</p>
-        <hr className='text-box_hr' />
-      </div>
+      <TextBox
+        text1='Somos un grupo de cinco marcas con soluciones mobiliariaspara proyectos de oficina, contract y hospitality.'
+        text2='Cada una cuenta con una esencia y personalidad propia, ofreciendo una extensa gama de acabados y colores que nos mantienen en tendencia.'
+        color='var(--color-verdeoscuro)'
+        colorletter='#FFF'
+      />
       <Space 
         name='MISIÓN'
         image={ imageMision }

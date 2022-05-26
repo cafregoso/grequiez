@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Brand({ img, logo, text }) {
+export default function Brand({ img, logo, brand, text }) {
   return (
     <div>
-      <img src={ img } alt='Grupo Requiez - Silla' />
-      <img src={ logo } alt='Grupo Requiez - Logo - Requiez Labenze Okamura Infiniti Quadrifoglio Interface' />
+      <img src={ img } alt='Grupo Requiez - Certificados' />
+      <img src={ logo } alt={`Grupo Requiez - Logo - ${brand}`} />
       <p>
         { text }
       </p>

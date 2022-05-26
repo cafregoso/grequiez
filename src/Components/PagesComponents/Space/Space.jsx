@@ -7,11 +7,11 @@ export default function Space({ name, image, info, color }) {
     <div className="space">
       <div className="space-container">
         <div className="space-image">
-          <img src={image} alt='Grupo Requiez - Mision' />
+          <img src={image} alt={`Grupo Requiez - ${name}`} />
         </div>
         <div className="space-text" style={{ backgroundColor: '#EEE' }}>
           <div>
-            <h3 className="container-h3">{ name }</h3>
+            <h3 className="container-h3">{ name.toUpperCase() }<hr className="container-hr"/></h3>
             <p
               className="container-pgh"
             >

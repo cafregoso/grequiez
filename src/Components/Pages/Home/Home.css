@@ -3,28 +3,6 @@
     padding: 0 80px;
 }
 
-.text-box {
-    height: 650px;
-    background: var(--color-verdeoscuro);
-    margin-top: 55px;
-    display: grid;
-    place-content: center;
-}
-
-.text-box_p {
-    color: #fff;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 500;
-}
-
-.text-box_hr {
-    height: 8px;
-    width: 350px;
-    background: var(--color-verdeclaro);
-    border: none;
-}
-
 .home-container_subtitle {
     color: var(--color-verdeoscuro);
     font-size: 50px;
