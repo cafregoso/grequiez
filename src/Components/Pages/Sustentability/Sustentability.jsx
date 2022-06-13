@@ -7,7 +7,7 @@ import SpaceRight from '../../PagesComponents/SpaceRightS/SpaceRight'
 
 import banner from '../../../assets/sustentability/banner.webp'
 import product from '../../../assets/sustentability/productos_sustentables.webp'
-import silla from '../../../assets/sustentability/silla_eco.webp'
+import silla from '../../../assets/sustentability/silla_eco.png'
 
 import certs from '../../../certs.json'
 
@@ -83,6 +83,10 @@ export default function Sustentability() {
             soporte a las inclemencias del tiempo.
           </p>
         </div>
+      </section>
+
+      <section className='section-silla-eco'>
+        <img src={ silla } alt="Grupo Requiez - Silla eco" />
       </section>
     </div>
   )

@@ -27,3 +27,12 @@
     font-size: 30px;
     font-weight: 400;
 }
+
+.section-silla-eco {
+    background-color: var(--color-verdeclaro);
+    display: flex;
+}
+
+.section-silla-eco img {
+    justify-self: flex-end;
+}
