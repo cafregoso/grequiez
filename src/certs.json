@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Global STD",
+        "image": "/images/sustentability/global_STD.webp",
+        "info": "Certificación otorgada por parte del organismo Global Standards, en la norma ISO 9001:2015, la cual nos constituye como una empresa que cumple con todos los requisitos de un sistema de gestión de calidad, que garantiza que nuestro cliente siempre tenga un producto dentro de los mejores estándares de calidad."
+    },
+    {
+        "name": "CMMI",
+        "image": "/images/sustentability/CMMI.webp",
+        "info": "Certificación CMMI (Capability Maturity Model Integration), cuyo propósito es evaluar la madurez de los procesos de una organización y proporcionar una orientación referente a cómo mejorar los procesos que darán lugar a mejores productos. Las 5 marcas de Grupo Requiez obtuvieron la distinción dentro de sus divisiones comerciales."
+    },
+    {
+        "name": "Super Espacios",
+        "image": "/images/sustentability/super_espacios.webp",
+        "info": "El Ranking de Súper Espacios de Trabajo, es dado por parte de TOP Companies en conjunto con la Revista Expansión el cual nos distingue como una empresa que busca cambiar la forma de trabajar y que invierte en espacios diseñados para cuidar y atraer al talento, ofreciendo una mejor calidad de vida a nuestros colaboradores dentro de un ambiente positivo de trabajo. Espacios donde la capacidad de innovación a través del pensamiento y el uso de la tecnología distingue a Grupo Requiez para permanecer y adaptarse a los cambios."
+    },
+    {
+        "name": "ESR",
+        "image": "/images/sustentability/ESR.webp",
+        "info": "Distintivo ESR, Empresa Socialmente Responsable, por parte del Centro Mexicano de Filantropía (CEMEFI). De 2017 a 2020 hemos mantenido la distinción y seguimos trabajando por ello. Nos importan las expectativas de los grupos de interés, buscamos la generación sustentable de recursos a través de la promoción de valores, respetando a los colaboradores, a la comunidad y el medio ambiente para la construcción del bien común."
+    }
+]

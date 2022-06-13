@@ -3,10 +3,10 @@ import Banner from '../../PagesComponents/Banner/Banner'
 import SpaceRight from '../../PagesComponents/SpaceRight/SpaceRight'
 import Space from '../../PagesComponents/Space/Space'
 
-import banner from '../../../assets/banner.webp'
+import banner from '../../../assets/esr/banner_RS.webp'
 import causas from '../../../assets/esr/esr_causas.png'
-import lazos from '../../../assets/esr/esr_lazos.png'
-import healthy from '../../../assets/esr/esr_healthy.png'
+import lazos from '../../../assets/esr/lazos.webp'
+import healthy from '../../../assets/esr/healthy_life.webp'
 
 import './ESR.css'
 

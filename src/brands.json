@@ -1,38 +1,38 @@
 [
     {
         "id": 1,
-        "logo": "",
-        "img": "/images/brands/Arket_02.png",
+        "logo": "/images/brands/Logo-Requiez.webp",
+        "img": "/images/brands/Requiez.webp",
         "desc": "Marca con cinco líneas de productos: \nSillas y sillones de oficina, visitantes y \neventos, educación e industrial."
     },
     {
         "id": 2,
-        "logo": "",
-        "img": "/images/brands/banco-zebra-1.jpg",
+        "logo": "/images/brands/Logo-Labenze.webp",
+        "img": "/images/brands/Labenze.webp",
         "desc": "Una línea ideal de mobiliario contract, \ncorporativo y residencial. La marca se \nguía por firmas italianas de diseño \nque complementan el interiorismo \nmexicano."
     },
     {
         "id": 3,
-        "logo": "",
-        "img": "/images/brands/BRECK-LOUNGE-S7.jpg",
+        "logo": "/images/brands/Logo-Okamura.webp",
+        "img": "/images/brands/Okamura.webp",
         "desc": "Marca de origen japonés con más de 60 \naños en el mercado. Okamura está entre \nlas 3 primeras empresas de \nfabricación \nde muebles de oficina a nivel mundial."
     },
     {
         "id": 4,
-        "logo": "",
-        "img": "/images/brands/brek-con-rodajas-1.jpg",
+        "logo": "/images/brands/Logo-Infiniti.webp",
+        "img": "/images/brands/Infiniti.webp",
         "desc": "Marca nacida en 2008 que ofrece mobiliario \ndiseñado para trabajar, relajarse y \nsocializar. Creatividad, innovación \ntecnológica, metodología del diseño; \nson sus conceptos clave."
     },
     {
         "id": 5,
-        "logo": "",
-        "img": "/images/brands/class-1.jpg",
+        "logo": "/images/brands/Logo-Quadrifoglio.webp",
+        "img": "/images/brands/Quadrifoglio.webp",
         "desc": "Quadrifoglio Group fabrica y proyecta \nsoluciones de amueblamiento completas \npara llevar el bienestar y la elegancia \ndel diseño italiano. en los ambientes de \ntrabajo y en el contract."
     },
     {
         "id": 6,
-        "logo": "",
-        "img": "/images/brands/cp2.jpg",
+        "logo": "/images/brands/Logo-Interface.webp",
+        "img": "/images/brands/Interface.webp",
         "desc": "Proveedor global líder de pisos comerciales: \nAlfombras modulares, LVT, \nCaucho. Enfocados a reducir la huella de \ncarbono de nuestros productos experimentando \ncon materiales renovables y \nreciclables."
     }
 ]

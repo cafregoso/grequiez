@@ -1,0 +1,9 @@
+.cert-container {
+    max-width: 500px;
+    margin: 24px 50px;
+}
+
+.cert-container p {
+    font-size: 24px;
+    font-weight: 400;
+}

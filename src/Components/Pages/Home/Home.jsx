@@ -4,7 +4,7 @@ import Space from '../../PagesComponents/Space/Space'
 import InfoCard from '../../PagesComponents/InfoCard/InfoCard'
 
 import banner from '../../../assets/banner.webp'
-import imageMision from '../../../assets/re.webp'
+import imageMision from '../../../assets/mision.webp'
 
 import './Home.css'
 import brands from '../../../brands.json'
@@ -31,14 +31,14 @@ export default function Home() {
           creatividad, el compromiso y la integración
           del personal, todo ello por medio de la
           tecnología y capacitación de vanguardia.'
-        color='#FFF'
+        color='var(--color-beige)'
       />
       <h2 className='home-container_subtitle' id='brands'>NUESTRAS MARCAS</h2>
       <div className='home-container_brands'>
         {
-          brands.map(({ id, img, desc }) => {
+          brands.map(({ id, logo, img, desc }) => {
             return (
-              <InfoCard key={ id } image={ img } info={ desc } />
+              <InfoCard key={ id } logo={ logo } image={ img } info={ desc } />
             )
           })
         }
