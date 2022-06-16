@@ -6,6 +6,8 @@ import Home from "./Components/Pages/Home/Home"
 import ESR from "./Components/Pages/ESR/ESR"
 import History from "./Components/Pages/History/History"
 import Sustentability from "./Components/Pages/Sustentability/Sustentability"
+import Blog from './Components/Pages/Blog/Blog'
+import Contact from './Components/Pages/Contact/Contact'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Route path="esr" element={<ESR />} />
             <Route path="history" element={<History />} />
             <Route path="sustentability" element={<Sustentability />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
       </Router>
