@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -71,7 +72,7 @@ const Nav = () => {
                 <Typography textAlign="center"><Link className='colorLetter' to='/esr'>ESR</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link className='colorLetter' to='#brands'>MARCAS</Link></Typography>
+                <Typography textAlign="center"><HashLink className='colorLetter' to='/home#brands'>MARCAS</HashLink></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center"><Link className='colorLetter' to='/history'>Nuestra Historia</Link></Typography>
