@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import Alert from "@mui/material/Alert";
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
+
+import BlogDataService from "../../../services/services";
 
 import "./Footer.css";
 
 export default function Footer() {
+  const [data, setData] = useState({ name: "", email: "" });
+  const [open, setOpen] = useState(false)
+
+  const handleChange = (e) => {
+    setData({
+      ...data,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    setOpen(true)
+    e.preventDefault();
+    e.target.reset();
+    BlogDataService.createNewsletter(data);
+  };
+
   return (
     <footer>
       <div className="coryright">
@@ -56,12 +78,42 @@ export default function Footer() {
       </div>
       <div className="newsletter">
         <div>
-          <p>
-            Suscríbete al newsletter
-          </p>
-          <input type="text" placeholder="   Nombre" />
-          <input type="email" placeholder="   Email" />
-          <input type="button" value="Enviar" className="newsletter-button" />
+          <p>Suscríbete al newsletter</p>
+          <form onSubmit={handleSubmit}>
+            <input
+              name="name"
+              required
+              onChange={handleChange}
+              type="text"
+              placeholder="Nombre"
+            />
+            <input
+              name="email"
+              required
+              onChange={handleChange}
+              type="email"
+              placeholder="Email"
+            />
+            <input type="submit" value="Enviar" className="newsletter-button" />
+            <Alert
+              style={{ display: open ? '' : 'none' }}
+              action={
+                <IconButton
+                  aria-label="close"
+                  color="inherit"
+                  size="small"
+                  onClick={() => {
+                    setOpen(false);
+                  }}
+                >
+                  <CloseIcon fontSize="inherit" />
+                </IconButton>
+              }
+              sx={{ mb: 2 }}
+            >
+              Registro correcto
+            </Alert>
+          </form>
         </div>
       </div>
     </footer>
