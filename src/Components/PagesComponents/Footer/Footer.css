@@ -1,7 +1,6 @@
 footer {
     background: var(--color-verdeoscuro);
     box-sizing: border-box;
-    margin-top: 20px;
     padding: 0;;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

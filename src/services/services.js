@@ -12,7 +12,22 @@ class BlogDataService {
   }
   createBlog(data, token) {
     axios.defaults.headers.common["Authorization"] = "Token " + token;
-    return axios.post("http://localhost:8000/api/blog/", data);
+    axios.defaults.headers.post['Content-Type'] = "multipart/form-data";
+    let new_data = new FormData()
+
+    if (data.image1)
+      new_data.append("image1", data.image1, data.image1.name)
+    
+    if (data.image2)
+      new_data.append("image2", data.image2, data.image2.name)
+    new_data.append('title', data.title)
+    new_data.append('content1', data.content1)
+    new_data.append('content2', data.content2)
+    new_data.append('content3', data.content3)
+    new_data.append('resume', data.resume)
+    new_data.append('principal_image', data.principal_image, data.principal_image.name)
+    console.log(new_data)
+    return axios.post("http://localhost:8000/api/blog/", new_data);
   }
   updateBlog(id, data, token) {
     axios.defaults.headers.common["Authorization"] = "Token " + token;

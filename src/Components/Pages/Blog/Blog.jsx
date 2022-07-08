@@ -45,14 +45,20 @@ export default function Blog({ token, user, logout }) {
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 { user }
               </Typography>
-              <Button color="inherit" href="/"></Button>
+              <Button color="inherit" href="/addpost">Agregar post</Button>
               <Button color="inherit" onClick={ logout }>Logout</Button>
             </Toolbar>
           </AppBar>
         </Box>
       )}
       <Container
-        style={{ display: "flex", justifyContent: "center", gap: "35px", flexWrap: 'wrap' }}
+        style={{ 
+          display: "flex", 
+          justifyContent: "center", 
+          gap: "35px", 
+          flexWrap: 'wrap',
+          marginTop: '25px'
+        }}
       >
         {blogs.map(({ id, title, resume, created, principal_image, user }) => (
           <Card sx={{ maxWidth: 450, maxHeight: 500, boxShadow: 'none' }} key={id}>
@@ -66,13 +72,6 @@ export default function Blog({ token, user, logout }) {
               <CardContent>
                 <Typography variant="body2" sx={{ color: '#000' }}>
                   {moment(created).format("ll")}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{ color: '#000' }}
-                  style={{ marginBottom: "10px" }}
-                >
-                  {`Creado por: ${user}`}
                 </Typography>
                 <Typography sx={{ color: 'var(--color-verdeoscuro)', fontSize: '18px', fontWeight: '600' }} gutterBottom variant="h5" component="div">
                   {title.toUpperCase()}

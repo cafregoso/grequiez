@@ -67,7 +67,7 @@ function App() {
             <Route path="history/" element={<History />} />
             <Route path="sustentability/" element={<Sustentability />} />
             <Route path="blog/" element={<Blog token={ token } user={ user } logout={ logout } />} />
-            <Route path="addpost/" element={<AddPost token={ token } />} />
+            <Route path="addpost/" element={<AddPost token={ token } user={ user } />} />
             <Route path="blog/:id/" element={<BlogPost token={ token } user={ user } logout={ logout } />} />
             <Route path="contact/" element={<Contact />} />
             <Route path="login/" element={<Login login={ login } />} />

@@ -72,7 +72,7 @@ const Nav = () => {
                 <Typography textAlign="center"><Link className='colorLetter' to='/esr'>ESR</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><HashLink className='colorLetter' to='/home#brands'>MARCAS</HashLink></Typography>
+                <Typography textAlign="center"><HashLink className='colorLetter' to='/#brands'>MARCAS</HashLink></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center"><Link className='colorLetter' to='/history'>Nuestra Historia</Link></Typography>
@@ -104,9 +104,9 @@ const Nav = () => {
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
-                component={ Link }
+                component={ HashLink }
                 className='colorLetter'
-                to='#brands'
+                to='/#brands'
               >
                 MARCAS
               </Button>

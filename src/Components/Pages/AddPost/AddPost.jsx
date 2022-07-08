@@ -9,11 +9,11 @@ import InputLabel from "@mui/material/InputLabel";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 
-import BlogDataService from "../../../services/services"
+import BlogDataService from "../../../services/services";
 
-import './AddPost.css'
+import "./AddPost.css";
 
-export default function AddPost({ token }) {
+export default function AddPost({ token, user }) {
   const [data, setData] = useState({
     title: "",
     content1: "",
@@ -24,7 +24,7 @@ export default function AddPost({ token }) {
     image1: null,
     image2: null,
   });
-  const [submitted, setSubmitted] = useState(false);
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     setData({
@@ -33,15 +33,26 @@ export default function AddPost({ token }) {
     });
   };
 
-    const handleSubmit = () => {
-        BlogDataService.createBlog(data, token)
-        .then((response) => {
-            setSubmitted(true);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-    }
+  const handleChangeImage = (e) => {
+    console.log(e.target.files[0]);
+    setData({
+      ...data,
+      [e.target.name]: e.target.files[0],
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    BlogDataService.createBlog(data, token)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((err) => {
+        setErrors(err)
+        console.log(errors);
+      });
+    console.log(data);
+  };
 
   return (
     <div>
@@ -52,82 +63,62 @@ export default function AddPost({ token }) {
             see your posts.
           </Alert>
         ) : (
-          <Box
-            component="form"
-            sx={{
-              "& > :not(style)": { m: 1 },
-            }}
-            noValidate
-            autoComplete="off"
-            className="form-container"
-          >
-            <FormControl className="mb-3">
-              <InputLabel required={true}>Titulo</InputLabel>
-              <Input
-                type="text"
-                placeholder="Titulo"
-                name="title"
-                required
-                onChange={handleChange}
-              />
-            </FormControl>
-            <FormControl className="mb-3">
-              <InputLabel>Contenido principal</InputLabel>
-              <Input
-                type="text"
-                name="content1"
-                required
-                onChange={handleChange}
-              />
-            </FormControl>
-            <FormControl className="mb-3">
-              <InputLabel>Contenido adicional</InputLabel>
-              <Input
-                type="text"
-                name="content2"
-                onChange={handleChange}
-              />
-            </FormControl>
-            <FormControl className="mb-3">
-              <InputLabel>Contenido adicional</InputLabel>
-              <Input
-                type="text"
-                name="content3"
-                onChange={handleChange}
-              />
-            </FormControl>
-            <FormControl className="mb-3">
-              <InputLabel>Resumen</InputLabel>
-              <Input
-                type="text"
-                name="resume"
-                required
-                onChange={handleChange}
-              />
-            </FormControl>
-            <FormControl className="mb-3 input-field">
-              <InputLabel>Imagen principal</InputLabel>
-              <Input
-                type="file"
-                accept="image/jpeg, image/jpg, image/png, image/webp"
-                name="principal_image"
-                required
-                onChange={handleChange}
-                />
-            </FormControl>
-            <FormControl className="mb-3 input-field">
-              <InputLabel>Imagen opcional</InputLabel>
-              <Input
-                type="file"
-                accept="image/jpeg, image/jpg, image/png, image/webp"
-                name="image1"
-                onChange={handleChange}
-              />
-            </FormControl>
-            <Button variant="primary" onClick={handleSubmit}>
-              Agregar post
-            </Button>
-          </Box>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="title"
+              required
+              placeholder="Titulo"
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="resume"
+              placeholder="Resumen"
+              onChange={handleChange}
+            />
+            <textarea
+              name="content1"
+              placeholder="Contenido principal"
+              cols="30"
+              rows="10"
+              onChange={handleChange}
+            ></textarea>
+            <textarea
+              name="content2"
+              placeholder="Contenido adicional"
+              cols="30"
+              rows="10"
+              onChange={handleChange}
+            ></textarea>
+            <textarea
+              name="content3"
+              placeholder="Contenido adicional"
+              cols="30"
+              rows="10"
+              onChange={handleChange}
+            ></textarea>
+            <input
+              type="file"
+              name="principal_image"
+              required
+              accept="image/jpeg, image/jpg, image/png, image/webp"
+              onChange={handleChangeImage}
+            />
+            <input
+              type="file"
+              name="image1"
+              accept="image/jpeg, image/jpg, image/png, image/webp"
+              onChange={handleChangeImage}
+            />
+            <input
+              type="file"
+              name="image2"
+              accept="image/jpeg, image/jpg, image/png, image/webp"
+              onChange={handleChangeImage}
+            />
+            <input type="submit" value="Guardar" />
+          </form>
         )}
       </Container>
     </div>
