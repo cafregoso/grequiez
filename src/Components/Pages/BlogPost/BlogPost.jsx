@@ -12,7 +12,6 @@ import Toolbar from "@mui/material/Toolbar";
 import BlogDataService from "../../../services/services";
 
 import "./BlogPost.css";
-import TextBox from "../../PagesComponents/TextBox/TextBox";
 
 export default function BlogPost({ token, user, logout }) {
   const id = useParams().id;

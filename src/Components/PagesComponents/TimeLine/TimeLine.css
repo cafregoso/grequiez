@@ -1,11 +1,25 @@
+.timeline-container {
+    padding: 0 25px;
+    margin-bottom: 50px;
+}
+
 .datefont-personal {
     color: #000 !important;
     font-size: 25px !important;
+    font-weight: bold !important;
 }
 
 .vertical-timeline-element-content {
     box-shadow: none !important;
     padding: 0 !important;
+}
+
+.image-left {
+    flex-direction: row-reverse;
+}
+
+.vertical-timeline-element-p {
+    width: 200px;
 }
 
 .container-info {
@@ -18,13 +32,15 @@
 }
 
 .image-square {
-    width: 250px;
     height: 250px;
-    background: #bbb;
-    display: inline-block;
+}
+
+.image-square img {
+    height: 250px;
 }
 
 .container-info-time {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 10px;
 }

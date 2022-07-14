@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Banner from '../../PagesComponents/Banner/Banner'
 import Space from '../../PagesComponents/Space/Space'
 import InfoCard from '../../PagesComponents/InfoCard/InfoCard'

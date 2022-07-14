@@ -1,0 +1,17 @@
+.history-hero {
+    display: grid;
+    place-items: center;
+    margin: 40px auto;
+}
+
+.history-hero h2 {
+    margin: 0 auto;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.history-hero h3 {
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: bold;
+}
