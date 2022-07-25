@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/atoyacci/public_html/
+    - yarn build
+    - /bin/rsync -av build/ $DEPLOYPATH
