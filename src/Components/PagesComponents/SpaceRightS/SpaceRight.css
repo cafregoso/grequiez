@@ -1,36 +1,38 @@
 .space_rightS {
-    padding: 80px 35px;
+    padding: 80px 35px 0 35px;
     background: #fff;
 }
 
 .space-container_rightS {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 55% 45%;
     margin: 10px auto;
     max-width: 1500px;
 }
 
-.space-image_rightS img{
-    width: 100%;
-}
-
 .space-text_rightS {
-    display: grid;
-    place-items: center;
-    margin-left: 5px;
-    background: #fff;
-}
-
-.space-text_rightS div {
-    max-width: 800px;
+    position: relative;
+    background: var(--color-beige);
+    padding: 50px 0;
 }
 
 .container-h3_rightS {    
-    width: 70%;
-    margin: auto;
+    width: 80%;
+    margin: 10px auto;
     color: var(--color-verdeoscuro);
-    padding-bottom: 20px;
-    font-size: 70px;
+    font-size: 60px;
+}
+
+.space-image_rightS {
+    display: grid;
+    place-items: center;
+    position: relative;
+    left: 100;
+    z-index: 1000;
+}
+
+.space-image_rightS img{
+    width: 100%;
 }
 
 .container-hr_rigtS {
@@ -40,11 +42,11 @@
 }
 
 .container-pgh_rightS {
-    width: 70%;
+    width: 80%;
     margin: auto;
     color: #000;
-    font-weight: 400;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 28px;
 }
 
 

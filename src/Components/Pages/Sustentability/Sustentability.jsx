@@ -20,6 +20,7 @@ export default function Sustentability() {
 
       <div className='sustentability-container'>
         <TextBox 
+          width_cont= '700px'
           text1='Durante más de 35 años en el mercado hemos
           logrado distinciones de calidad, de alto nivel.'
           text2='Esto nos motiva a seguir siendo una marca
@@ -47,39 +48,36 @@ export default function Sustentability() {
         />
         <section className='section-info-p'>
           <div className='section-info-p_left'>
-            <p>Ayudas a crear un mundo más justo y sostenible.</p>
             <p>
-              Evitas la deforestación, porque un % de nuestros
-              productos se certifican con la FSC (Forest
-              Stewardship Council o Consejo de administración
+              Ayudas a crear un mundo más justo y sostenible,
+              evitas la deforestación, porque un porcentaje de
+              nuestros productos se certifican con la FSC (Forest
+              Stewardship Council o Consejo de Administración
               Forestal).
-            </p>
-            <p>
+              <br />
+              <br />
               Ayudas a que tu hogar sea más saludable y
-              armonioso, debido a que estás desplazando
+              armonioso, debido a que estas desplazando
               elementos que son nocivos para la salud, al usar
               tapicería y textiles que son de plantaciones
-              ecológicas sin tratamientos químicos además de
-              ser 100% reciclables y reciclados.
+              ecológicas sin tratamientos químicos, además de
+              ser 100% reciclables y reciclados, adquieres un
+              producto con fabricación inofensiva por sus
+              materiales, que reducen las emisiones de CO2,
+              favoreciendo la conservación del medio ambiente.
             </p>
           </div>
+          <div></div>
           <div className='section-info-p_right'>
             <p>
-              Adquieres un producto con fabricación inofensiva por
-              sus materiales reciclados, que reducen las emisiones de
-              CO2, favoreciendo la conservación del medio ambiente.
-            </p>
-            <p>
               Favoreces el reciclaje y la reutilización de materiales
-              brindando una segunda vida al producto.
-            </p>
-            <p>
-              Cuentas con la oportunidad de ver la variedad de
-              productos con los que contamos, además de adquirir
-              diseños diferentes, colores y estilos tanto tradicionales
-              como innovadores.
-            </p>
-            <p>
+              brindando una segunda vida al producto, cuentas con la
+              oportunidad de ver la variedad de productos con los que
+              contamos, además de adquirir diseños diferentes,
+              variedad de colores y estilos tanto tradicionales como
+              innovadores.
+              <br />
+              <br />
               Adquieres un producto versátil y adaptable a ambientes
               exteriores e interiores, debido a su alta resistencia y
               soporte a las inclemencias del tiempo.

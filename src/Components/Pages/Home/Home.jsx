@@ -16,7 +16,7 @@ export default function Home() {
       <Banner img={ banner } />
       <div className='home-container'>
         <TextBox
-          text1='Somos un grupo de cinco marcas con soluciones mobiliariaspara proyectos de oficina, contract y hospitality.'
+          text1='Somos un grupo de cinco marcas con soluciones mobiliarias para proyectos de oficina, contract y hospitality.'
           text2='Cada una cuenta con una esencia y personalidad propia, ofreciendo una extensa gama de acabados y colores que nos mantienen en tendencia.'
           color='var(--color-verdeoscuro)'
           colorletter='#FFF'

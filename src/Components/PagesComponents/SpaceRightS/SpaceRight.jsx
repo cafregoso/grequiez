@@ -7,7 +7,6 @@ export default function SpaceRight({ name, image, info }) {
     <div className="space_rightS">
       <div className="space-container_rightS">
         <div className="space-text_rightS">
-          <div>
             <h3 className="container-h3_rightS">{ name.toUpperCase() }<hr className="container-hr_rigtS"/></h3>
             
             <p
@@ -15,7 +14,6 @@ export default function SpaceRight({ name, image, info }) {
             >
               {info}
             </p>
-          </div>
         </div>
         <div className="space-image_rightS">
           <img src={image} alt={`Grupo Requiez - ${name}`} />

@@ -27,6 +27,11 @@
     place-items: center;
 }
 
+.info-title {
+    margin: 5px 0;
+    text-align: start;
+}
+
 .vertical-timeline-element-title {
     width: auto !important;
 }

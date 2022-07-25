@@ -10,29 +10,30 @@
 }
 
 .section-info-p {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    place-items: center;
+    display: flex;
+    justify-content: space-evenly;
     margin: 80px auto;
 }
 
 .section-info-p_left {
-    max-width: 650px;
-    font-size: 30px;
+    max-width: 550px;
+    font-size: 25px;
     font-weight: 400;
 }
 
 .section-info-p_right {
-    max-width: 650px;
-    font-size: 30px;
+    max-width: 550px;
+    font-size: 25px;
     font-weight: 400;
 }
 
 .section-silla-eco {
     background-color: var(--color-verdeclaro);
     display: flex;
+    justify-content: end;
+    height: 1300px;
 }
 
 .section-silla-eco img {
-    justify-self: flex-end;
+    max-height: 1200px;
 }

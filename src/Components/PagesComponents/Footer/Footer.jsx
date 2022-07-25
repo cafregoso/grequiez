@@ -5,6 +5,11 @@ import Alert from "@mui/material/Alert";
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 
+import fb from '../../../assets/LOGOS/fb.webp'
+import ig from '../../../assets/LOGOS/ig.webp'
+import li from '../../../assets/LOGOS/li.webp'
+import web from '../../../assets/LOGOS/web.webp'
+
 import BlogDataService from "../../../services/services";
 
 import "./Footer.css";
@@ -49,14 +54,10 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <FacebookRoundedIcon
-              style={{
-                fontSize: "40px",
-                cursor: "pointer",
-                color: "#fff",
-                marginRight: "30px",
-              }}
-              className="footer-icon"
+            <img
+              className="footer-icon" 
+              src={fb}  
+              alt="Grupo Requiez - Facebook"
             />
           </a>
           <a
@@ -64,14 +65,32 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <InstagramIcon
-              style={{
-                fontSize: "40px",
-                cursor: "pointer",
-                color: "#fff",
-                marginRight: "30px",
-              }}
-              className="footer-icon"
+            <img
+              className="footer-icon" 
+              src={ig}  
+              alt="Grupo Requiez - Facebook"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/requiez.sillas/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="footer-icon" 
+              src={li}  
+              alt="Grupo Requiez - Facebook"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/requiez.sillas/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="footer-icon" 
+              src={web}  
+              alt="Grupo Requiez - Facebook"
             />
           </a>
         </div>

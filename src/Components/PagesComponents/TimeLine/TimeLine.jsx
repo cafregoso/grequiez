@@ -36,6 +36,7 @@ export default function TimeLine() {
         >
           <div className="container-info-time">
             <div className="container-info">
+              <h2 className="info-title">1985</h2>
               <p className="vertical-timeline-element-p">
                 Nace Grupo Requiez
                 como una empresa
