@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.574b4429.css",
+    "main.js": "/static/js/main.6e31b4a1.js",
+    "static/js/787.9f216096.chunk.js": "/static/js/787.9f216096.chunk.js",
+    "static/media/silla_eco.png": "/static/media/silla_eco.ca60e0bc2ea07a795957.png",
+    "static/media/banner.webp": "/static/media/banner.dda645e8d9f484d2be1c.webp",
+    "static/media/esr_causas.png": "/static/media/esr_causas.cd84071121615b5bda9f.png",
+    "static/media/banner_RS.webp": "/static/media/banner_RS.81e93132fcecd4e9da58.webp",
+    "static/media/lazos.webp": "/static/media/lazos.4ab2a1e5663dad3a9801.webp",
+    "static/media/productos_sustentables.webp": "/static/media/productos_sustentables.4390a3488938dda022f7.webp",
+    "static/media/healthy_life.webp": "/static/media/healthy_life.cbb1121ee2755f508446.webp",
+    "static/media/2015.webp": "/static/media/2015.e95527dfb797a9e1beee.webp",
+    "static/media/2019.webp": "/static/media/2019.ac652b520c8952b68890.webp",
+    "static/media/2006.webp": "/static/media/2006.6e8ab740d5c6c2892e0b.webp",
+    "static/media/1999.webp": "/static/media/1999.61b2f2acc302a8de95f0.webp",
+    "static/media/2017.webp": "/static/media/2017.aaea4c45ad22a451240a.webp",
+    "static/media/1990.webp": "/static/media/1990.f486769093bd48ec3fcb.webp",
+    "static/media/2018.webp": "/static/media/2018.167da7581fa16c8ccf6d.webp",
+    "static/media/2021.webp": "/static/media/2021.aea1a301f122cfe3a2f6.webp",
+    "static/media/2013.webp": "/static/media/2013.3600c5404c3af14e457f.webp",
+    "static/media/2010.webp": "/static/media/2010.49974455c094305f641a.webp",
+    "static/media/2012.webp": "/static/media/2012.140dc76ed462d5cb6de9.webp",
+    "static/media/2016.webp": "/static/media/2016.bab198a89c1cfed8a986.webp",
+    "static/media/mision.webp": "/static/media/mision.4d2c849d6a054255725d.webp",
+    "static/media/2002.webp": "/static/media/2002.04989a16f8f758e0346e.webp",
+    "static/media/1985.webp": "/static/media/1985.16197271e053a3469458.webp",
+    "static/media/web.webp": "/static/media/web.dad69a144733d5e44e7b.webp",
+    "static/media/ig.webp": "/static/media/ig.8bbc872da0a87661be25.webp",
+    "static/media/li.webp": "/static/media/li.e80478fcad312862cdba.webp",
+    "static/media/fb.webp": "/static/media/fb.145e5f293196f0ffae0b.webp",
+    "index.html": "/index.html",
+    "main.574b4429.css.map": "/static/css/main.574b4429.css.map",
+    "main.6e31b4a1.js.map": "/static/js/main.6e31b4a1.js.map",
+    "787.9f216096.chunk.js.map": "/static/js/787.9f216096.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.574b4429.css",
+    "static/js/main.6e31b4a1.js"
+  ]
+}
