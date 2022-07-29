@@ -14,12 +14,22 @@
     padding: 0 !important;
 }
 
+.vertical-timeline-element--left p{
+    text-align: right !important;
+}
+
+.vertical-timeline-element--left h2{
+    text-align: right !important;
+}
+
 .image-left {
     flex-direction: row-reverse;
 }
 
 .vertical-timeline-element-p {
+    margin: 0 !important;
     width: 200px;
+    text-align: start !important;
 }
 
 .container-info {
@@ -27,9 +37,25 @@
     place-items: center;
 }
 
+.container-info_title {
+    width: 100%;
+    height: inherit;
+}
+
+.vertical-timeline-element--left .container-info_title {
+    width: 100%;
+    display: flex; 
+    justify-content: flex-end;
+}
+
 .info-title {
-    margin: 5px 0;
+    margin: 0;
     text-align: start;
+    font-size: 30px !important;
+}
+
+.container-p {
+    height: 100%;
 }
 
 .vertical-timeline-element-title {

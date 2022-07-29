@@ -8,7 +8,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import fb from '../../../assets/LOGOS/fb.webp'
 import ig from '../../../assets/LOGOS/ig.webp'
 import li from '../../../assets/LOGOS/li.webp'
-import web from '../../../assets/LOGOS/web.webp'
 
 import BlogDataService from "../../../services/services";
 
@@ -79,17 +78,6 @@ export default function Footer() {
             <img
               className="footer-icon" 
               src={li}  
-              alt="Grupo Requiez - Facebook"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/requiez.sillas/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="footer-icon" 
-              src={web}  
               alt="Grupo Requiez - Facebook"
             />
           </a>

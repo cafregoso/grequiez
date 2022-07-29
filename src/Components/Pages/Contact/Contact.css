@@ -1,0 +1,41 @@
+main {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    place-items: center;
+    margin: 50px auto;
+}
+
+.contact-container h2 {
+    font-size: 40px;
+    color: var(--color-verdeoscuro);
+    margin-bottom: 50px;
+}
+
+.contact-container h4 {
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+}
+
+.contact-container p {
+    margin: 0 auto;
+    font-size: 24px;
+    color: #000;
+}
+
+.contact-container section div {
+    margin-bottom: 45px;
+}
+
+.contact-container section div a {
+    /* text-decoration: none; */
+    color: #000;
+}
+
+.contact-container form {
+    display: grid;
+    place-items: center;
+    width: 80%;
+    margin: 0 auto;
+}

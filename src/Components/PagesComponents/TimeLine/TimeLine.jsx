@@ -10,7 +10,7 @@ import "./TimeLine.css";
 import _1985 from '../../../assets/timeline/1985.webp'
 import _1990 from '../../../assets/timeline/1990.webp'
 import _1999 from '../../../assets/timeline/1999.webp'
-// import _2000 from '../../../assets/timeline/2000.webp'
+import _2000 from '../../../assets/timeline/2000.jpg'
 import _2002 from '../../../assets/timeline/2002.webp'
 import _2006 from '../../../assets/timeline/2006.webp'
 import _2010 from '../../../assets/timeline/2010.webp'
@@ -28,22 +28,24 @@ export default function TimeLine() {
     <div className="timeline-container">
       <VerticalTimeline className="vertical" lineColor={"#000"}>
         <VerticalTimelineElement
-          className=""
-          date="1985"
-          dateClassName="datefont-personal"
           iconStyle={{ display: "none" }}
           position={"right"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time">
             <div className="container-info">
-              <h2 className="info-title">1985</h2>
-              <p className="vertical-timeline-element-p">
-                Nace Grupo Requiez
-                como una empresa
-                dedicada a la distribución
-                de productos para
-                ingeniería y dibujo.
-              </p>
+              <div className="container-info_title">
+                <h2 className="info-title">1985</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Nace Grupo Requiez
+                  como una empresa
+                  dedicada a la distribución
+                  de productos para
+                  ingeniería y dibujo.
+                </p>
+              </div>
             </div>
             <div className="image-square">
               <img src={_1985} alt='Grupo requiez - 1985' />
@@ -51,20 +53,24 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="1990"
-          dateClassName="datefont-personal"
+          className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time image-left">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Se crea la división de
-                sillería: “Reqüiez”,
-                posicionándose como líder
-                en el mercado.
-              </p>
+              <div className="container-info_title">
+                <h2 className="info-title">1990</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Se crea la división de
+                  sillería: “Reqüiez”,
+                  posicionándose como líder
+                  en el mercado.
+                </p>
+              </div>
               <h3 className="vertical-timeline-element-title">REQUIEZ</h3>
             </div>
             <div className="image-square">
@@ -73,18 +79,21 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className=""
-          date="1999"
-          dateClassName="datefont-personal"
           iconStyle={{ display: "none" }}
           position={"right"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Se inaugura la planta
-                de Metal Mecánica.
-              </p>
+            <div className="container-info_title">
+                <h2 className="info-title">1999</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Se inaugura la planta
+                  de Metal Mecánica.
+                </p>
+              </div>
             </div>
             <div className="image-square">
               <img src={_1999} alt="Grupo Requiez - 1999" />
@@ -92,36 +101,43 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2000"
-          dateClassName="datefont-personal"
+          className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time image-left">
             <div className="container-info">
-              <p className="vertical-timeline-element-p" style={{ textAlign: 'left' }}>
-                Nueva planta Belenes
-                Norte, Zapopan.
-              </p>
+            <div className="container-info_title">
+                <h2 className="info-title">2000</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p" style={{ textAlign: 'left' }}>
+                  Nueva planta Belenes
+                  Norte, Zapopan.
+                </p>
+              </div>
             </div>
             <div className="image-square">
-              {/* <img src={_2000} alt=" Grupo Requiez - 2000" /> */}
+              <img src={_2000} alt=" Grupo Requiez - 2000" />
             </div>
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className=""
-          date="2002"
-          dateClassName="datefont-personal"
           iconStyle={{ display: "none" }}
           position={"right"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Nace la marca Euroseat.
-              </p>
+            <div className="container-info_title">
+                <h2 className="info-title">2002</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Nace la marca Euroseat.
+                </p>
+              </div>
             </div>
             <div className="image-square">
               <img src={_2002} alt="Grupo Requiez - 2002" />
@@ -129,18 +145,22 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2006"
-          dateClassName="datefont-personal"
+          className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time image-left">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Se introduce la marca
-                Labenze.
-              </p>
+            <div className="container-info_title">
+                <h2 className="info-title">2006</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Se introduce la marca
+                  Labenze.
+                </p>
+              </div>
               <h3 className="vertical-timeline-element-title">LABENZE</h3>
             </div>
             <div className="image-square">
@@ -149,20 +169,23 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className=""
-          date="2010"
-          dateClassName="datefont-personal"
           iconStyle={{ display: "none" }}
           position={"right"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Se integra la línea de
-                pintura electroestática
-                en la planta de <b>Metal
-                Mecánica.</b>
-              </p>
+            <div className="container-info_title">
+                <h2 className="info-title">2010</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Se integra la línea de
+                  pintura electroestática
+                  en la planta de <b>Metal
+                  Mecánica.</b>
+                </p>
+              </div>
             </div>
             <div className="image-square">
               <img src={_2010} alt="Grupo Requiez - 2010" />
@@ -170,18 +193,22 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2012"
-          dateClassName="datefont-personal"
+          className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time image-left">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Apertura de almacén
-                en CDMX.
-              </p>
+              <div className="container-info_title">
+                <h2 className="info-title">2012</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Apertura de almacén
+                  en CDMX.
+                </p>
+              </div>
             </div>
             <div className="image-square">
               <img src={_2012} alt="Grupo Requiez - 2012" />
@@ -189,19 +216,22 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className=""
-          date="2013"
-          dateClassName="datefont-personal"
           iconStyle={{ display: "none" }}
           position={"right"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Se incorpora línea de
-                sillería japonesa
-                <b>Okamura</b>
-              </p>
+            <div className="container-info_title">
+                <h2 className="info-title">2013</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Se incorpora línea de
+                  sillería japonesa
+                  <b>Okamura</b>
+                </p>
+              </div>
               <h3 className="vertical-timeline-element-title">
                 OKAMURA
               </h3>
@@ -212,18 +242,22 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2015"
-          dateClassName="datefont-personal"
+          className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time image-left">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Se suma <b>Infiniti</b>,
-                marca italiana.
-              </p>
+            <div className="container-info_title">
+                <h2 className="info-title">2015</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Se suma <b>Infiniti</b>,
+                  marca italiana.
+                </p>
+              </div>
               <h3 className="vertical-timeline-element-title">INFINITI</h3>
             </div>
             <div className="image-square">
@@ -232,21 +266,24 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className=""
-          date="2016"
-          dateClassName="datefont-personal"
           iconStyle={{ display: "none" }}
           position={"right"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Obtención del distintivo
-                de Empresa Socialmente
-                Responsable.<br /><br />
-                Se activan oficinas
-                administrativas en CDMX.
-              </p>
+            <div className="container-info_title">
+                <h2 className="info-title">2016</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Obtención del distintivo
+                  de Empresa Socialmente
+                  Responsable.<br /><br />
+                  Se activan oficinas
+                  administrativas en CDMX.
+                </p>
+              </div>
             </div>
             <div className="image-square">
               <img src={_2016} alt="Grupo Requiez - 2016" />
@@ -254,20 +291,26 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2017"
-          dateClassName="datefont-personal"
+          className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time image-left">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Se aperturan nuevas instalaciones
-                de corporativo en Urban Center
-                Guadalajara y planta operativa en
-                el centro logístico de <b>Acatlán</b>.
-              </p>
+              <div className="container-info_title">
+                <h2 className="info-title">2017</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Se aperturan oficinas
+                  corporativas en Urban Center y
+                  el centro logístico de <b>Acatlán</b>.
+                  <br/><br/>
+                  Se introduce la línea italiana de
+                  mobiliario de Quadrifoglio.
+                </p>
+              </div>
             </div>
             <div className="image-square">
               <img src={_2017} alt="Grupo Requiez - 2017" />
@@ -275,18 +318,21 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className=""
-          date="2018"
-          dateClassName="datefont-personal"
           iconStyle={{ display: "none" }}
           position={"right"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Fusión de marcas
-                Euroseat y Labenze.
-              </p>
+            <div className="container-info_title">
+                <h2 className="info-title">2018</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Fusión de marcas
+                  Euroseat y Labenze.
+                </p>
+              </div>
             </div>
             <div className="image-square">
               <img src={_2018} alt="Grupo Requiez - 2018" />
@@ -294,18 +340,22 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2019"
-          dateClassName="datefont-personal"
+          className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time image-left">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Se integra la
-                marca Interface.
-              </p>
+            <div className="container-info_title">
+                <h2 className="info-title">2019</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Se integra la
+                  marca Interface.
+                </p>
+              </div>
               <h3 className="vertical-timeline-element-title">INTERFACE</h3>
             </div>
             <div className="image-square">
@@ -314,19 +364,22 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className=""
-          date="2021"
-          dateClassName="datefont-personal"
           iconStyle={{ display: "none" }}
           position={"right"}
+          contentArrowStyle={{ display: 'none' }}
         >
           <div className="container-info-time">
             <div className="container-info">
-              <p className="vertical-timeline-element-p">
-                Nuevas instalaciones
-                de corporativo en<br/>
-                <b>Punto Sur</b>.
-              </p>
+            <div className="container-info_title">
+                <h2 className="info-title">2021</h2>
+              </div>
+              <div className="container-p">
+                <p className="vertical-timeline-element-p">
+                  Nuevas instalaciones
+                  de corporativo en<br/>
+                  <b>Punto Sur</b>.
+                </p>
+              </div>
             </div>
             <div className="image-square">
               <img src={_2021} alt="Grupo Requiez - 2021" />

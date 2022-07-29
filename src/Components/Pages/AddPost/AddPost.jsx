@@ -18,6 +18,7 @@ export default function AddPost({ token, user }) {
     principal_image: null,
     image1: null,
     image2: null,
+    user: user
   });
   const [errors, setErrors] = useState({});
 

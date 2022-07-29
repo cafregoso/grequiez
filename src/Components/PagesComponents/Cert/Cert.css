@@ -7,3 +7,9 @@
     font-size: 20px;
     font-weight: 300;
 }
+
+.cert-container h2 {
+    margin: 0;
+    color: var(--color-verdeoscuro);
+    font-size: 32px;
+}

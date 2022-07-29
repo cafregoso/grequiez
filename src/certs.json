@@ -18,5 +18,15 @@
         "name": "ESR",
         "image": "/images/sustentability/ESR.webp",
         "info": "Distintivo ESR, Empresa Socialmente Responsable, por parte del Centro Mexicano de Filantropía (CEMEFI). De 2017 a 2020 hemos mantenido la distinción y seguimos trabajando por ello. Nos importan las expectativas de los grupos de interés, buscamos la generación sustentable de recursos a través de la promoción de valores, respetando a los colaboradores, a la comunidad y el medio ambiente para la construcción del bien común."
+    },
+    {
+        "name": "Jalisco Responsable",
+        "image": "/images/sustentability/jalisco_responsable.png",
+        "info": "Es un Distintivo otorgado por la Secretaría del Trabajo y Previsión Social y el consejo de Cámaras Industriales de Jalisco, A.C. el cual reconocer las buenas practicas laborales y tiene como objeto reconocer y promover la cultura y legalidad en todos los centros de trabajo del estado de Jalisco."
+    },
+    {
+        "name": "Super Empresas",
+        "image": "/images/sustentability/super_empresas.png",
+        "info": "Súper empresas es un ranking donde la revista Expansión y la firma especializada en diagnóstico y fortalecimiento organizacional, Top Companies, evalúan a cerca de 6 mil empresas, el cual nos respalda en ser una empresa confiable, con cultura sólida y colaboradores comprometidos."
     }
 ]

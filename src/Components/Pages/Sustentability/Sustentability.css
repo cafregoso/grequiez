@@ -30,10 +30,37 @@
 .section-silla-eco {
     background-color: var(--color-verdeclaro);
     display: flex;
-    justify-content: end;
-    height: 1300px;
+    justify-content: flex-end;
+    padding: 65px 0;
 }
 
 .section-silla-eco img {
     max-height: 1200px;
+}
+
+.silla-eco-text {
+    position: relative;
+    z-index: 1000;
+}
+
+.silla-eco-text_top {
+    position: relative;
+    left: 220px;
+}
+
+.silla-eco-text_mid {
+    position: relative;
+    left: 60px;
+    padding-top: 80px;
+}
+
+.silla-eco-text_bot {
+    position: relative;
+    left: 220px;
+    padding-top: 80px;
+}
+
+.cert-container p {
+    font-size: 22px;
+    font-weight: 300;
 }
