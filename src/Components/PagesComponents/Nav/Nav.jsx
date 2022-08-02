@@ -66,7 +66,7 @@ const Nav = () => {
               }}
             >
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link className='colorLetter' to='/'>Inicio</Link></Typography>
+                <Typography textAlign="center"><Link className='colorLetter' to='/'>INICIO</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center"><Link className='colorLetter' to='/esr'>ESR</Link></Typography>
@@ -75,10 +75,10 @@ const Nav = () => {
                 <Typography textAlign="center"><HashLink className='colorLetter' to='/#brands'>MARCAS</HashLink></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link className='colorLetter' to='/history'>Nuestra Historia</Link></Typography>
+                <Typography textAlign="center"><Link className='colorLetter' to='/history'>NUESTRA HISTORIA</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link className='colorLetter' to='/sustentability'>Sustentabilidad</Link></Typography>
+                <Typography textAlign="center"><Link className='colorLetter' to='/sustentability'>SUSTENTABILIDAD</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center"><Link className='colorLetter' to='/blog'>BLOG</Link></Typography>
@@ -99,7 +99,7 @@ const Nav = () => {
                 className='colorLetter'
                 to='/'
               >
-                Inicio
+                INICIO
               </Button>
               <Button
                 onClick={handleCloseNavMenu}
@@ -126,7 +126,7 @@ const Nav = () => {
                 className='colorLetter'
                 to='/history'
               >
-                Nuestra Historia
+                NUESTA HISTORIA
               </Button>
               <Button
                 onClick={handleCloseNavMenu}
@@ -135,7 +135,7 @@ const Nav = () => {
                 className='colorLetter'
                 to='/sustentability'
               >
-                Sustentabilidad
+                SUSTENTABILIDAD
               </Button>
               <Button
                 onClick={handleCloseNavMenu}
