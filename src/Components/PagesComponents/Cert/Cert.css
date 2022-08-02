@@ -13,3 +13,17 @@
     color: var(--color-verdeoscuro);
     font-size: 32px;
 }
+
+@media (max-width: 768px) {
+    .cert-container {
+        margin: 20px;
+    }
+
+    .cert-container img {
+        height: 110px;
+    }
+    
+    .cert-container p {
+        font-size: 18px !important;
+    }
+}

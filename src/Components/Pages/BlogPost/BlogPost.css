@@ -1,0 +1,43 @@
+.blogpost-container {
+    margin-top: 50px;
+    padding: 0 80px;
+}
+
+.blogpost-image {
+    width: auto;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    padding: 0 15px;
+}
+
+.blogpost-image img {
+    max-width: 440px;
+}
+
+.blogpost-container p {
+    padding: 10px 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .blogpost-container {
+        padding: 0 20px !important;
+    }
+
+    .blogpost-image {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .blogpost-image img {
+        max-width: 300px;
+    }
+
+    .blogpost-container p {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}

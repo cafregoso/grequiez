@@ -35,7 +35,7 @@ export default function Blog({ token, user, logout }) {
   }, [token]);
 
   return (
-    <div>
+    <div className="blog-container">
       {token == null || token === "" ? (
         ""
       ) : (
@@ -55,20 +55,19 @@ export default function Blog({ token, user, logout }) {
         style={{ 
           display: "flex", 
           justifyContent: "center", 
-          gap: "35px", 
+          gap: "15px 35px", 
           flexWrap: 'wrap',
           marginTop: '25px'
         }}
       >
-        {blogs.map(({ id, title, resume, created, principal_image, user }) => (
-          <Card sx={{ maxWidth: 450, maxHeight: 500, boxShadow: 'none' }} key={id}>
+        {blogs.map(({ id, title, resume, created, image1, user }) => (
+          <Card sx={{ maxWidth: '300px' }} key={id}>
             <CardMedia
               component="img"
-              alt={`Blog ${title}`}
-              image={principal_image}
-              style={{ maxHeight: 300, objectFit: "cover" }}
+              height='300'
+              alt={`Blog - ${title}`}
+              image={image1}
             />
-            <div style={{ display: 'grid', justifyContent: 'space-between', height: '200px' }}>
               <CardContent>
                 <Typography variant="body2" sx={{ color: '#000' }}>
                   {moment(created).format("ll")}
@@ -82,15 +81,15 @@ export default function Blog({ token, user, logout }) {
               </CardContent>
               <CardActions>
                 <Button 
-                  sx={{ color: 'var(--color-verdeoscuro)' }} 
+                  sx={{ color: 'var(--color-verdeoscuro)', marginTop: '15px' }} 
                   size="small" 
                   component={ Link }
+                  className='blog-button'
                   to={ `/blog/${ id }` }
                 >
                   Leer más
                 </Button>
               </CardActions>
-            </div>
           </Card>
         ))}
       </Container>

@@ -14,3 +14,14 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 0 20px !important;
+    }
+
+    .home-container_subtitle {
+        font-size: 35px !important;
+        margin-left: 40px;
+    }
+}

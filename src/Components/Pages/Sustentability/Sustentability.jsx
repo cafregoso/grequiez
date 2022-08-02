@@ -20,7 +20,6 @@ export default function Sustentability() {
 
       <div className='sustentability-container'>
         <TextBox 
-          width_cont= '700px'
           text1='Durante más de 35 años en el mercado hemos
           logrado distinciones de calidad, de alto nivel.'
           text2='Esto nos motiva a seguir siendo una marca

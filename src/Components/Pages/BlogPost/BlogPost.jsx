@@ -9,6 +9,10 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 
+import Banner from '../../PagesComponents/Banner/Banner'
+import TextBox from '../../PagesComponents/TextBox/TextBox'
+import Space from '../../PagesComponents/Space/Space'
+
 import BlogDataService from "../../../services/services";
 
 import "./BlogPost.css";
@@ -16,14 +20,6 @@ import "./BlogPost.css";
 export default function BlogPost({ token, user, logout }) {
   const id = useParams().id;
   const [post, setPost] = useState(null);
-
-  const styles = {
-    p: {
-      padding: '10px 30px',
-      fontSize: '24px',
-      fontWeigth: '500'
-    }
-  }
 
   useEffect(() => {
     const retrieveTodos = () => {
@@ -37,10 +33,10 @@ export default function BlogPost({ token, user, logout }) {
     };
 
     retrieveTodos();
-  }, [id]);
+  }, [id, token]);
 
   return (
-    <div>
+    <div className="blogpost-container">
       {token == null || token === "" ? (
         ""
       ) : (
@@ -73,18 +69,17 @@ export default function BlogPost({ token, user, logout }) {
             <h2 style={{ color: 'var(--color-verdeoscuro)', fontSize: '40px', marginBottom: '0' }}>{ post.title }</h2>
             <section>
               <p style={{ textAlign: 'end', padding: '10px 45px', marginTop: '0' }}>{moment(post.created).format("ll")}</p>
-              <img src={ post.principal_image } alt={`Grupo Requiez Blog - ${ post.title }`} />
+              <Banner img={ post.principal_image } alt={`Grupo Requiez Blog - ${ post.title }`} />
             </section>
             <section style={{ minHeight: '200px', width: '100%' }}>
-              <p style={{ color: 'var(--color-verdeoscuro)', fontSize: '35px', textAlign: 'center' }}>{ post.resume }</p>
-              <hr className='text-box_hr' />
+              <TextBox 
+                text1={ post.resume }
+                color='#FFF'
+                colorletter='var(--color-verdeoscuro)'
+              />
             </section>
-            <section style={{ 
-                width: '100%',
-                display: 'grid',
-                gridTemplateColumns: post.image1 ? '1fr 1fr' : '1fr',
-                placeItems: 'center',
-                gap: '50px'
+            <section className="blogpost-image" style={{ 
+                gridTemplateColumns: post.image1 ? '50% 50%' : '100%'
               }}
             >
               {
@@ -94,12 +89,12 @@ export default function BlogPost({ token, user, logout }) {
                       <img src={ post.image1 } alt={`Grupo Requiez Post - ${ post.title }`}  />
                     </div>
                     <div>
-                      <p style={styles.p}>{ post.content1 }</p>
+                      <p>{ post.content1 }</p>
                     </div>
                   </Fragment>
                 ) : (
                   <div>
-                    <p style={styles.p}>{ post.content1 }</p>
+                    <p>{ post.content1 }</p>
                   </div>
                 )
               }
@@ -115,13 +110,13 @@ export default function BlogPost({ token, user, logout }) {
               {
                 post.content2 &&
                   <div>
-                    <p style={styles.p}>{ post.content2 }</p>
+                    <p>{ post.content2 }</p>
                   </div>
               }
               {
                 post.content3 &&
                   <div>
-                    <p style={styles.p}>{ post.content3 }</p>
+                    <p>{ post.content3 }</p>
                   </div>
               }
             </section>

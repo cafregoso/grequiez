@@ -4,11 +4,11 @@ import axios from "axios";
 class BlogDataService {
   getAll(token) {
     axios.defaults.headers.common["Authorization"] = "Token " + token;
-    return axios.get("http://localhost:8000/api/blog/");
+    return axios.get("https://api.atoyacci.com/blog/");
   }
   getOne(token, id) {
     axios.defaults.headers.common["Authorization"] = "Token " + token;
-    return axios.get(`http://localhost:8000/api/blog/${id}`);
+    return axios.get(`https://api.atoyacci.com/blog/${id}`);
   }
   createBlog(data, token) {
     axios.defaults.headers.common["Authorization"] = "Token " + token;
@@ -28,27 +28,27 @@ class BlogDataService {
       new_data.append('principal_image', data.principal_image, data.principal_image.name)
       new_data.append('user', localStorage.getItem('user'))
       console.log(new_data)
-    return axios.post("http://localhost:8000/api/blog/", new_data);
+    return axios.post("https://api.atoyacci.com/blog/", new_data);
   }
   updateBlog(id, data, token) {
     axios.defaults.headers.common["Authorization"] = "Token " + token;
-    return axios.put(`http://localhost:8000/api/blog/${id}`, data);
+    return axios.put(`https://api.atoyacci.com/blog/${id}`, data);
   }
   deleteBlog(id, token) {
     axios.defaults.headers.common["Authorization"] = "Token " + token;
-    return axios.delete(`http://localhost:8000/api/blog/${id}`);
+    return axios.delete(`https://api.atoyacci.com/blog/${id}`);
   }
   login(data) {
-    return axios.post("http://localhost:8000/api/login/", data);
+    return axios.post("https://api.atoyacci.com/login/", data);
   }
   signup(data) {
-    return axios.post("http://localhost:8000/api/signup-rqz/", data);
+    return axios.post("https://api.atoyacci.com/signup-rqz/", data);
   }
   createNewsletter(data){
-    axios.post("http://localhost:8000/api/newsletter/", data)
+    axios.post("https://api.atoyacci.com/newsletter/", data)
   }
   sendEmail(data){
-    axios.post("http://localhost:8000/api/sendmail/", data)
+    axios.post("https://api.atoyacci.com/sendmail/", data)
     .then(response => {
       if (response.status === 200) {
         return response.data

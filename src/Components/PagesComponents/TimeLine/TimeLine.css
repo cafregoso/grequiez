@@ -75,3 +75,41 @@
     justify-content: space-evenly;
     gap: 10px;
 }
+
+@media (max-width: 768px) {
+    .timeline-container {
+        padding: 0;
+    }
+    
+    .container-info-time {
+        margin: 30px auto;
+    }
+
+    .container-info-time {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+    }
+    
+    .container-p {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .info-title {
+        justify-self: flex-start;
+    }
+
+    .vertical-timeline-element--left p {
+        text-align: left !important;
+    }
+
+    .container-info_title {
+        justify-content: flex-start !important;
+    }
+
+    .image-square  img {
+        width: 280px !important;
+        height: auto;
+    }
+}

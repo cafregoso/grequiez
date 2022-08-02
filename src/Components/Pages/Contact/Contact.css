@@ -1,41 +1,65 @@
 main {
     display: grid;
-    grid-template-columns: 60% 30%;
+    grid-template-columns: 60% 40%;
     place-items: center;
     margin: 50px auto;
+    padding: 0 80px;
 }
 
-.contact-container h2 {
-    font-size: 40px;
+.contact h2 {
+    font-size: 35px;
     color: var(--color-verdeoscuro);
     margin-bottom: 50px;
 }
 
-.contact-container h4 {
+.contact h4 {
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     color: #000;
 }
 
-.contact-container p {
+.contact p {
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 20px;
     color: #000;
 }
 
-.contact-container section div {
+.contact section div {
     margin-bottom: 45px;
 }
 
-.contact-container section div a {
+.contact section div a {
     /* text-decoration: none; */
     color: #000;
 }
 
-.contact-container form {
+.contact form {
     display: grid;
     place-items: center;
     width: 80%;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact h2 {
+        font-size: 30px;
+    }
+    
+    .contact h4 {
+        font-size: 22px;
+    }
+    
+    .contact p {
+        font-size: 16px;
+    }
 }

@@ -1,6 +1,13 @@
 .info-container {
     max-width: 350px;
-    margin: 10px 25px;
+    margin: 10px 10px;
+    padding: 5px 15px;
+}
+
+.info-container:hover {
+    transition: all 0.7s linear;
+    box-shadow: 5px 5px 5px 2px #AAA;
+    border-radius: 8px;
 }
 
 .info-container_img img {
@@ -10,4 +17,14 @@
 .info-container_text {
     font-size: 19px;
     font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        max-width: 260px !important;
+    }
+
+    .info-container_text {
+        font-size: 14px !important;
+    }
 }

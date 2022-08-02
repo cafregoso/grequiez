@@ -37,9 +37,9 @@ export default function Home() {
         <h2 className='home-container_subtitle' id='brands'>NUESTRAS MARCAS</h2>
         <div className='home-container_brands'>
           {
-            brands.map(({ id, logo, img, desc }) => {
+            brands.map(({ id, logo, img, desc, link }) => {
               return (
-                <InfoCard key={ id } logo={ logo } image={ img } info={ desc } />
+                <InfoCard key={ id } logo={ logo } image={ img } info={ desc } link={ link } />
               )
             })
           }

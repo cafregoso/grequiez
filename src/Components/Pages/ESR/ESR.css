@@ -2,3 +2,9 @@
     margin-top: 50px;
     padding: 0 80px;
 }
+
+@media (max-width: 768px) {
+    .esr-container {
+        padding: 0 20px !important;
+    }
+}

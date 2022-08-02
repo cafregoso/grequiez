@@ -7,7 +7,7 @@ export default function SpaceRight({ name, image, info }) {
     <div className="space_right">
       <div className="space-container_right">
         <div className="space-text_right">
-          <div>
+          <div className="space-text_cont">
             <h3 className="container-h3_right">{ name.toUpperCase() }<hr className="container-hr_rigt"/></h3>
             
             <p

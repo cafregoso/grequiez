@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useFormik } from 'formik'
-import { Modal, Box, Typography, TextField, Button, backdropClasses } from '@mui/material'
+import { Modal, Box, Typography, TextField, Button } from '@mui/material'
 import Banner from '../../PagesComponents/Banner/Banner'
 import axios from 'axios'
 
@@ -35,7 +35,7 @@ const Contact = () => {
       message: '',
     },
     onSubmit: values => {
-        axios.post("http://localhost:8000/api/sendmail/", values)
+        axios.post("https://api.atoyacci.com/sendmail/", values)
         .then(response => {
           if (response.status === 200) {
             setMessage(response.data)
@@ -53,7 +53,7 @@ const Contact = () => {
   }) 
 
   return (
-    <div className='contact-container'>
+    <div className='contact'>
       <Banner img={ banner } />
       <main>
         <form onSubmit={formik.handleSubmit}>

@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import Alert from "@mui/material/Alert";
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 
-import fb from '../../../assets/LOGOS/fb.webp'
-import ig from '../../../assets/LOGOS/ig.webp'
-import li from '../../../assets/LOGOS/li.webp'
+import fb from "../../../assets/LOGOS/fb.webp";
+import ig from "../../../assets/LOGOS/ig.webp";
+import li from "../../../assets/LOGOS/li.webp";
 
 import BlogDataService from "../../../services/services";
 
@@ -15,7 +13,7 @@ import "./Footer.css";
 
 export default function Footer() {
   const [data, setData] = useState({ name: "", email: "" });
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   const handleChange = (e) => {
     setData({
@@ -25,7 +23,7 @@ export default function Footer() {
   };
 
   const handleSubmit = (e) => {
-    setOpen(true)
+    setOpen(true);
     e.preventDefault();
     e.target.reset();
     BlogDataService.createNewsletter(data);
@@ -34,57 +32,61 @@ export default function Footer() {
   return (
     <footer>
       <div className="coryright">
-        <p>AVISO DE PRIVACIDAD</p>
-        <p>
-          Copyright ©2022 All rights reserved | <br /> Grupo Requiez
-        </p>
+        <div className="div">
+          <p>AVISO DE PRIVACIDAD</p>
+          <p>
+            Copyright ©2022 All rights reserved
+            <br /> Grupo Requiez
+          </p>
+        </div>
       </div>
       <div className="contact-info">
-        <h3>CONTACTO</h3>
-        <p className="contact-mail">
-          <a href="mailto:hola@gruporequiez.com">hola@gruporequiez.com</a>
-        </p>
-        <p className="contact-phone">
-          <a href="tel:3338337788">+52 (33) 3833 7788</a>
-        </p>
-        <div className="contact-social">
-          <a
-            href="https://www.facebook.com/Requiez.Oficina/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="footer-icon" 
-              src={fb}  
-              alt="Grupo Requiez - Facebook"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/requiez.sillas/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="footer-icon" 
-              src={ig}  
-              alt="Grupo Requiez - Facebook"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/requiez.sillas/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="footer-icon" 
-              src={li}  
-              alt="Grupo Requiez - Facebook"
-            />
-          </a>
+        <div className="div">
+          <h3>CONTACTO</h3>
+          <p className="contact-mail">
+            <a href="mailto:hola@gruporequiez.com">hola@gruporequiez.com</a>
+          </p>
+          <p className="contact-phone">
+            <a href="tel:3338337788">+52 (33) 3833 7788</a>
+          </p>
+          <div className="contact-social">
+            <a
+              href="https://www.facebook.com/gruporequiezgdl"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="footer-icon"
+                src={fb}
+                alt="Grupo Requiez - Facebook"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/gruporequiez/"
+              rel="noreferrer"
+            >
+              <img
+                className="footer-icon"
+                src={ig}
+                alt="Grupo Requiez - Instagram"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/grupo-requiez/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="footer-icon"
+                src={li}
+                alt="Grupo Requiez - Linkedin"
+              />
+            </a>
+          </div>
         </div>
       </div>
       <div className="newsletter">
-        <div>
+        <div className="div">
           <p>Suscríbete al newsletter</p>
           <form onSubmit={handleSubmit}>
             <input
@@ -103,7 +105,7 @@ export default function Footer() {
             />
             <input type="submit" value="Enviar" className="newsletter-button" />
             <Alert
-              style={{ display: open ? '' : 'none' }}
+              style={{ display: open ? "" : "none" }}
               action={
                 <IconButton
                   aria-label="close"

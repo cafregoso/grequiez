@@ -1,0 +1,17 @@
+.blog-container {
+    padding: 0 80px;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+}
+
+.blog-button {
+    color: var(--color-verdeoscuro) !important;
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 0 20px;
+        min-height: 100vh;
+    }
+}

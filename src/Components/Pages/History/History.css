@@ -15,3 +15,13 @@
     font-size: 40px;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .history-hero h2 {
+        font-size: 60px;
+    }
+
+    .history-hero h3 {
+        font-size: 30px;
+    }
+}
