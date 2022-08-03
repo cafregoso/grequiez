@@ -33,7 +33,7 @@ export default function ESR() {
           pertenencia enfocado en valores y en crecimiento profesional.'
         />
         <SpaceRight
-          name='Healty Life'
+          name='Healthy Life'
           image={ healthy }
           info='Programa con enfoque al personal interno de Grupo Requiez,
           con el objetivo de promover y gestionar el bienestar

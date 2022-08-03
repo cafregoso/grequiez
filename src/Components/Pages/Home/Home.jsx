@@ -16,22 +16,15 @@ export default function Home() {
       <Banner img={ banner } />
       <div className='home-container'>
         <TextBox
-          text1='Somos un grupo de cinco marcas con soluciones mobiliarias para proyectos de oficina, contract y hospitality.'
-          text2='Cada una cuenta con una esencia y personalidad propia, ofreciendo una extensa gama de acabados y colores que nos mantienen en tendencia.'
+          text1='Somos un grupo que brindamos soluciones en mobiliario para espacios de oficina, contract y hospitality. Cada una de nuestras marcas cuenta con una esencia y personalidad propia.'
+          text2='Contamos con exclusividad de socios comerciales internacionales y más de 250 distribuidores en toda la república mexicana. El catálogo de Grupo Requiez es el más extenso del país, con propuestas en tecnología y diseño para corresponder a la necesidad de los distintos usuarios.'
           color='var(--color-verdeoscuro)'
           colorletter='#FFF'
         />
         <Space 
-          name='MISIÓN'
+          name='PROPÓSITO'
           image={ imageMision }
-          info='Fabricar y proveer muebles para oficina,
-            contract y colectividad, proporcionando
-            a nuestros clientes productos y servicios
-            de calidad e innovación, generando
-            beneficios consistentes, basados en la
-            creatividad, el compromiso y la integración
-            del personal, todo ello por medio de la
-            tecnología y capacitación de vanguardia.'
+          info='Mejoramos cualquier espacio a través del mobiliario, despertando la creatividad e inspirando a los usuarios a través del confort, la ergonomía y el diseño.'
           color='var(--color-beige)'
         />
         <h2 className='home-container_subtitle' id='brands'>NUESTRAS MARCAS</h2>

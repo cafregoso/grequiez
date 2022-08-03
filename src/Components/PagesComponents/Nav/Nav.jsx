@@ -69,9 +69,6 @@ const Nav = () => {
                 <Typography textAlign="center"><Link className='colorLetter' to='/'>INICIO</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link className='colorLetter' to='/esr'>ESR</Link></Typography>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center"><HashLink className='colorLetter' to='/#brands'>MARCAS</HashLink></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
@@ -79,6 +76,9 @@ const Nav = () => {
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center"><Link className='colorLetter' to='/sustentability'>SUSTENTABILIDAD</Link></Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center"><Link className='colorLetter' to='/esr'>ESR</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center"><Link className='colorLetter' to='/blog'>BLOG</Link></Typography>
@@ -115,15 +115,6 @@ const Nav = () => {
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 component={ Link }
                 className='colorLetter'
-                to='/esr'
-              >
-                ESR
-              </Button>
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-                component={ Link }
-                className='colorLetter'
                 to='/history'
               >
                 NUESTA HISTORIA
@@ -136,6 +127,15 @@ const Nav = () => {
                 to='/sustentability'
               >
                 SUSTENTABILIDAD
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+                component={ Link }
+                className='colorLetter'
+                to='/esr'
+              >
+                ESR
               </Button>
               <Button
                 onClick={handleCloseNavMenu}

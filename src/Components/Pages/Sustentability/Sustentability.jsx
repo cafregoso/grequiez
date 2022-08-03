@@ -77,6 +77,9 @@ export default function Sustentability() {
               innovadores.
               <br />
               <br />
+              La energía de la planta se obtiene a través de paneles solares, generando un ahorro por más de 25 años hasta el momento.
+              <br />
+              <br />
               Adquieres un producto versátil y adaptable a ambientes
               exteriores e interiores, debido a su alta resistencia y
               soporte a las inclemencias del tiempo.
@@ -90,19 +93,19 @@ export default function Sustentability() {
           <div className='silla-eco-text_top'>
             <Cert
               title={'PIEL VS PLÁSTICO'}
-              info={'El objetivo es suplir el plástico que funciona como empaque de las estructuras de acero, aprovechando las mermas de piel que se obtienen después de los procesos de tapizado . Estas mermas de piel se utilizan en el traslado de producto de una de las planta de producción a otra, para  nalizar su producción. Esto se convierte en un costo bene cio, por la eliminación de la compra de plástico y la reutilización de mermas de piel que serán usadas por mayor cantidad de veces.'}
+              info={'Se pretende suplir el plástico que funciona como empaque de las estructuras de acero, aprovechando las mermas de piel que se obtienen después de los procesos de tapizado. Estas mermas de piel se utilizan en el traslado de producto de una de las planta de producción a otra, para finalizar su producción. Esto se convierte en un costo beneficio, por la eliminación de la compra de plástico y la reutilización de mermas de piel que serán usadas por mayor cantidad de veces.'}
             />
           </div>
           <div className='silla-eco-text_mid'>
             <Cert
               title={'PROCESO DE PINTURA'}
-              info={'Fosfato de zinc vs zirconio, a través de los procesos de pintura que se llevan a cabo en estructuras de productos especí cos que lo requieren y que son elaboradas por Grupo Requiez, como parte del acabado de los productos anteriormente se utilizaba el fosfato de zinc para el lavado de estructuras como parte de su tratamiento, esto hace que la pintura tenga mejor adherencia, mayor resistencia a la corrosión, evitar la formación de burbujas, pero era altamente contaminante en los residuos del agua que se usaba para esos enjuagues como parte del proceso. Después de análisis aplicados a las aguas residuales se decidió por los factores: reducción de costos en la compra de este químico, menor contaminación al medio ambiente y sobre todo en el mismo resultado obtenido.'}
+              info={'A través de los procesos de pintura que se llevan a cabo en estructuras de productos específicos que lo requieren y que son elaboradas por Grupo Requiez, como parte del acabado de los productos anteriormente se utilizaba el fosfato de zinc para el lavado de estructuras como parte de su tratamiento, esto hace que la pintura tenga mejor adherencia, mayor resistencia a la corrosión, evitar la formación de burbujas, pero era altamente contaminante en los residuos del agua que se usaba para esos enjuagues como parte del proceso. Después de análisis aplicados a las aguas residuales se decidió por los factores: reducción de costos en la compra de este químico, menor contaminación al medio ambiente y sobre todo en el mismo resultado obtenido.'}
             />
           </div>
           <div className='silla-eco-text_bot'>
             <Cert
               title={'PEGAMENTO BASE AGUA'}
-              info={'Es implementado como el principal producto en los procesos de tapizado ya que son adhesivos adecuados para unir todo tipo de materiales porosos, debido a que se hace la unión de la tela y poliuretano evitando que se dañe la calidad de ambos materiales.'}
+              info={'Es implementado como el principal producto en los procesos de tapizado ya que son adhesivos adecuados para unir todo tipo de materiales porosos, debido a que se hace la unión de la tela y poliuretano evitando que se dañe la calidad de ambos materiales. A diferencia de los pegamentos industriales comunes, este no contamina, ya que es a base de agua.'}
             />
           </div>
         </div>
