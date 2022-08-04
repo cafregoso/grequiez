@@ -16,15 +16,14 @@ export default function Home() {
       <Banner img={ banner } />
       <div className='home-container'>
         <TextBox
-          text1='Somos un grupo que brindamos soluciones en mobiliario para espacios de oficina, contract y hospitality. Cada una de nuestras marcas cuenta con una esencia y personalidad propia.'
-          text2='Contamos con exclusividad de socios comerciales internacionales y más de 250 distribuidores en toda la república mexicana. El catálogo de Grupo Requiez es el más extenso del país, con propuestas en tecnología y diseño para corresponder a la necesidad de los distintos usuarios.'
+          text1='Mejoramos cualquier espacio a través del mobiliario, despertando la creatividad e inspirando a los usuarios a través del confort, la ergonomía y el diseño.'
           color='var(--color-verdeoscuro)'
           colorletter='#FFF'
         />
         <Space 
-          name='PROPÓSITO'
           image={ imageMision }
-          info='Mejoramos cualquier espacio a través del mobiliario, despertando la creatividad e inspirando a los usuarios a través del confort, la ergonomía y el diseño.'
+          info='Somos un grupo que brindamos soluciones en mobiliario para espacios de oficina, contract y hospitality. Cada una de nuestras marcas cuenta con una esencia y personalidad propia.'
+          info2='Contamos con exclusividad de socios comerciales internacionales y más de 250 distribuidores en toda la república mexicana. El catálogo de Grupo Requiez es el más extenso del país, con propuestas en tecnología y diseño para corresponder a la necesidad de los distintos usuarios.'
           color='var(--color-beige)'
         />
         <h2 className='home-container_subtitle' id='brands'>NUESTRAS MARCAS</h2>

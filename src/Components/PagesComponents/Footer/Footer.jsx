@@ -7,6 +7,8 @@ import fb from "../../../assets/LOGOS/fb.webp";
 import ig from "../../../assets/LOGOS/ig.webp";
 import li from "../../../assets/LOGOS/li.webp";
 
+import logo from "../../../assets/logo_footer.png";
+
 import BlogDataService from "../../../services/services";
 
 import "./Footer.css";
@@ -33,10 +35,12 @@ export default function Footer() {
     <footer>
       <div className="coryright">
         <div className="div">
-          <p>AVISO DE PRIVACIDAD</p>
+          <img style={{ width: '220px' }} src={ logo } alt="Grupo Requiez Logo" />
+          <p style={{ marginTop: '20px ' }}>AVISO DE PRIVACIDAD</p>
           <p>
             Copyright ©2022 All rights reserved
-            <br /> Grupo Requiez
+            <br />
+            Grupo Requiez
           </p>
         </div>
       </div>

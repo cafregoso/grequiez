@@ -37,11 +37,11 @@ footer {
 }
 
 .contact-info p {
-    margin: 20px auto0;
+    margin: 20px auto;
 }
 
 .contact-info h3 {
-    margin-bottom: 0;
+    margin: 10px 0 0 0;
     color: #FFF;
     font-weight: bold;
     font-size: 20px;

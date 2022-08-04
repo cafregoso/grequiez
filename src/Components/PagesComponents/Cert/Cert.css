@@ -3,9 +3,14 @@
     margin: 24px 50px;
 }
 
+.cert-container img {
+    height: 130px;
+}
+
 .cert-container p {
     font-size: 20px;
     font-weight: 300;
+    text-align: justify;
 }
 
 .cert-container h2 {

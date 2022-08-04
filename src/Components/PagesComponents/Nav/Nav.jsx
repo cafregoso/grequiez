@@ -117,7 +117,7 @@ const Nav = () => {
                 className='colorLetter'
                 to='/history'
               >
-                NUESTA HISTORIA
+                NUESTRA HISTORIA
               </Button>
               <Button
                 onClick={handleCloseNavMenu}
