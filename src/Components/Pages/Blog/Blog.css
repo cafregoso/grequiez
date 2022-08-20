@@ -1,8 +1,8 @@
 .blog-container {
     padding: 0 80px;
-    height: 80vh;
     display: grid;
     place-items: center;
+    margin-bottom: 20px;
 }
 
 .blog-button {

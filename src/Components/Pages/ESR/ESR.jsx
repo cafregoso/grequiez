@@ -4,7 +4,7 @@ import SpaceRight from '../../PagesComponents/SpaceRight/SpaceRight'
 import Space from '../../PagesComponents/Space/Space'
 
 import banner from '../../../assets/esr/banner_RS.webp'
-import causas from '../../../assets/esr/esr_causas.png'
+import causas from '../../../assets/esr/esr_causas.webp'
 import lazos from '../../../assets/esr/lazos.webp'
 import healthy from '../../../assets/esr/healthy_life.webp'
 

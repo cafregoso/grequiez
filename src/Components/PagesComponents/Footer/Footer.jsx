@@ -6,6 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import fb from "../../../assets/LOGOS/fb.webp";
 import ig from "../../../assets/LOGOS/ig.webp";
 import li from "../../../assets/LOGOS/li.webp";
+import tt from "../../../assets/LOGOS/tt.png";
 
 import logo from "../../../assets/logo_footer.png";
 
@@ -83,6 +84,17 @@ export default function Footer() {
               <img
                 className="footer-icon"
                 src={li}
+                alt="Grupo Requiez - Linkedin"
+              />
+            </a>
+            <a
+              href="https://www.tiktok.com/@gruporequiez"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="footer-icon"
+                src={tt}
                 alt="Grupo Requiez - Linkedin"
               />
             </a>

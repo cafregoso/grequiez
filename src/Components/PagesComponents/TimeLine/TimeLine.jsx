@@ -9,13 +9,13 @@ import "./TimeLine.css";
 
 import _1985 from '../../../assets/timeline/1985.webp'
 import _1990 from '../../../assets/timeline/1990.webp'
-import _1999 from '../../../assets/timeline/1999.webp'
+import _1999 from '../../../assets/timeline/1999.gif'
 import _2000 from '../../../assets/timeline/2000.jpg'
 import _2002 from '../../../assets/timeline/2002.webp'
-import _2006 from '../../../assets/timeline/2006.webp'
+import _2006 from '../../../assets/timeline/2006.gif'
 import _2010 from '../../../assets/timeline/2010.webp'
 import _2012 from '../../../assets/timeline/2012.webp'
-import _2013 from '../../../assets/timeline/2013.webp'
+import _2013 from '../../../assets/timeline/2013.gif'
 import _2015 from '../../../assets/timeline/2015.webp'
 import _2016 from '../../../assets/timeline/2016.webp'
 import _2017 from '../../../assets/timeline/2017.webp'
@@ -28,6 +28,7 @@ export default function TimeLine() {
     <div className="timeline-container">
       <VerticalTimeline className="vertical" lineColor={"#000"}>
         <VerticalTimelineElement
+          className="timeline-box"
           iconStyle={{ display: "none" }}
           position={"right"}
           contentArrowStyle={{ display: 'none' }}
@@ -53,7 +54,8 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--left"
+          className="timeline-box"
+          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -79,6 +81,7 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="timeline-box"
           iconStyle={{ display: "none" }}
           position={"right"}
           contentArrowStyle={{ display: 'none' }}
@@ -101,7 +104,8 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--left"
+          className="timeline-box"
+          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -124,6 +128,7 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="timeline-box"
           iconStyle={{ display: "none" }}
           position={"right"}
           contentArrowStyle={{ display: 'none' }}
@@ -145,7 +150,8 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--left"
+          className="timeline-box"
+          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -169,6 +175,7 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="timeline-box"
           iconStyle={{ display: "none" }}
           position={"right"}
           contentArrowStyle={{ display: 'none' }}
@@ -193,7 +200,8 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--left"
+          className="timeline-box"
+          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -216,6 +224,7 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="timeline-box"
           iconStyle={{ display: "none" }}
           position={"right"}
           contentArrowStyle={{ display: 'none' }}
@@ -242,7 +251,8 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--left"
+          className="timeline-box"
+          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -266,6 +276,7 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="timeline-box"
           iconStyle={{ display: "none" }}
           position={"right"}
           contentArrowStyle={{ display: 'none' }}
@@ -291,7 +302,8 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--left"
+          className="timeline-box"
+          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -318,6 +330,7 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="timeline-box"
           iconStyle={{ display: "none" }}
           position={"right"}
           contentArrowStyle={{ display: 'none' }}
@@ -340,7 +353,8 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--left"
+          className="timeline-box"
+          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -364,6 +378,7 @@ export default function TimeLine() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="timeline-box"
           iconStyle={{ display: "none" }}
           position={"right"}
           contentArrowStyle={{ display: 'none' }}
