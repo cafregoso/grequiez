@@ -5,7 +5,10 @@ import {
 } from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
+
 import "./TimeLine.css";
+
+// Images
 
 import _1985 from '../../../assets/timeline/1985.webp'
 import _1990 from '../../../assets/timeline/1990.webp'
@@ -22,6 +25,15 @@ import _2017 from '../../../assets/timeline/2017.webp'
 import _2018 from '../../../assets/timeline/2018.webp'
 import _2019 from '../../../assets/timeline/2019.webp'
 import _2021 from '../../../assets/timeline/2021.webp'
+
+// Logos
+
+import Requiez from '../../../assets/timeline/LOGOS/Requiez.webp'
+import Infiniti from '../../../assets/timeline/LOGOS/Infiniti.webp'
+import Interface from '../../../assets/timeline/LOGOS/Interface.webp'
+import Labenze from '../../../assets/timeline/LOGOS/Labenze.webp'
+import Okamura from '../../../assets/timeline/LOGOS/Okamura.webp'
+import Quadrifoglio from '../../../assets/timeline/LOGOS/Quadrifoglio.webp'
 
 export default function TimeLine() {
   return (
@@ -55,7 +67,6 @@ export default function TimeLine() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="timeline-box"
-          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -73,7 +84,7 @@ export default function TimeLine() {
                   en el mercado.
                 </p>
               </div>
-              <h3 className="vertical-timeline-element-title">REQUIEZ</h3>
+              <img style={{ width: '100%' }} src={ Requiez } alt='Logo Requiez' />
             </div>
             <div className="image-square">
               <img src={_1990} alt='Grupo requiez - 1990' />
@@ -105,7 +116,6 @@ export default function TimeLine() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="timeline-box"
-          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -151,7 +161,6 @@ export default function TimeLine() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="timeline-box"
-          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -167,7 +176,7 @@ export default function TimeLine() {
                   Labenze.
                 </p>
               </div>
-              <h3 className="vertical-timeline-element-title">LABENZE</h3>
+              <img style={{ width: '100%', maxWidth: '200px' }} src={ Labenze } alt='Logo Labenze' />
             </div>
             <div className="image-square">
               <img src={_2006} alt="Grupo Requiez - 2006" />
@@ -201,7 +210,6 @@ export default function TimeLine() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="timeline-box"
-          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -241,9 +249,7 @@ export default function TimeLine() {
                   <b>Okamura</b>
                 </p>
               </div>
-              <h3 className="vertical-timeline-element-title">
-                OKAMURA
-              </h3>
+              <img style={{ width: '100%', maxWidth: '200px' }} src={ Okamura } alt='Logo Okamura' />
             </div>
             <div className="image-square">
               <img src={_2013} alt="Grupo Requiez - 2013" />
@@ -252,7 +258,6 @@ export default function TimeLine() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="timeline-box"
-          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -268,7 +273,7 @@ export default function TimeLine() {
                   marca italiana.
                 </p>
               </div>
-              <h3 className="vertical-timeline-element-title">INFINITI</h3>
+              <img style={{ width: '100%', maxWidth: '200px' }} src={ Infiniti } alt='Logo Infiniti' />
             </div>
             <div className="image-square">
               <img src={_2015} alt="Grupo Requiez - 2015" />
@@ -303,7 +308,6 @@ export default function TimeLine() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="timeline-box"
-          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -318,11 +322,12 @@ export default function TimeLine() {
                   Se aperturan oficinas
                   corporativas en Urban Center y
                   el centro logístico de <b>Acatlán</b>.
-                  <br/><br/>
+                  <br/>
                   Se introduce la línea italiana de
                   mobiliario de Quadrifoglio.
                 </p>
               </div>
+              <img style={{ width: '100%', maxWidth: '200px' }} src={ Quadrifoglio } alt='Logo Quadrifoglio' />
             </div>
             <div className="image-square">
               <img src={_2017} alt="Grupo Requiez - 2017" />
@@ -354,7 +359,6 @@ export default function TimeLine() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="timeline-box"
-          // className="vertical-timeline-element--left"
           iconStyle={{ display: "none" }}
           position={"left"}
           contentArrowStyle={{ display: 'none' }}
@@ -370,7 +374,7 @@ export default function TimeLine() {
                   marca Interface.
                 </p>
               </div>
-              <h3 className="vertical-timeline-element-title">INTERFACE</h3>
+              <img style={{ width: '100%', maxWidth: '200px' }} src={ Interface } alt='Logo Interface' />
             </div>
             <div className="image-square">
               <img src={_2019} alt="Grupo Requiez - 2019" />
