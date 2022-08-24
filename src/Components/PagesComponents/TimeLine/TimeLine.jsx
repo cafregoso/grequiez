@@ -28,8 +28,8 @@ import _2021 from '../../../assets/timeline/2021.webp'
 
 // Logos
 
-import Requiez from '../../../assets/timeline/LOGOS/Requiez.webp'
-import Infiniti from '../../../assets/timeline/LOGOS/Infiniti.webp'
+import Requiez from '../../../assets/timeline/LOGOS/Requiez.png'
+import Infiniti from '../../../assets/timeline/LOGOS/Infiniti.png'
 import Interface from '../../../assets/timeline/LOGOS/Interface.webp'
 import Labenze from '../../../assets/timeline/LOGOS/Labenze.webp'
 import Okamura from '../../../assets/timeline/LOGOS/Okamura.webp'
@@ -84,7 +84,9 @@ export default function TimeLine() {
                   en el mercado.
                 </p>
               </div>
-              <img style={{ width: '100%' }} src={ Requiez } alt='Logo Requiez' />
+              <div className="container-logo" style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+                <img style={{ width: '100%', maxWidth: '150px' }} src={ Requiez } alt='Logo Requiez' />
+              </div>
             </div>
             <div className="image-square">
               <img src={_1990} alt='Grupo requiez - 1990' />
@@ -176,7 +178,9 @@ export default function TimeLine() {
                   Labenze.
                 </p>
               </div>
-              <img style={{ width: '100%', maxWidth: '200px' }} src={ Labenze } alt='Logo Labenze' />
+              <div className="container-logo">
+                <img style={{ width: '100%', maxWidth: '200px' }} src={ Labenze } alt='Logo Labenze' />
+              </div>
             </div>
             <div className="image-square">
               <img src={_2006} alt="Grupo Requiez - 2006" />
@@ -249,7 +253,9 @@ export default function TimeLine() {
                   <b>Okamura</b>
                 </p>
               </div>
-              <img style={{ width: '100%', maxWidth: '200px' }} src={ Okamura } alt='Logo Okamura' />
+              <div className="container-logo">
+                <img style={{ width: '100%', maxWidth: '200px' }} src={ Okamura } alt='Logo Okamura' />
+              </div>
             </div>
             <div className="image-square">
               <img src={_2013} alt="Grupo Requiez - 2013" />
@@ -273,7 +279,9 @@ export default function TimeLine() {
                   marca italiana.
                 </p>
               </div>
-              <img style={{ width: '100%', maxWidth: '200px' }} src={ Infiniti } alt='Logo Infiniti' />
+              <div className="container-logo" style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+                <img style={{ width: '100%', maxWidth: '120px' }} src={ Infiniti } alt='Logo Infiniti' />
+              </div>
             </div>
             <div className="image-square">
               <img src={_2015} alt="Grupo Requiez - 2015" />
@@ -327,7 +335,9 @@ export default function TimeLine() {
                   mobiliario de Quadrifoglio.
                 </p>
               </div>
-              <img style={{ width: '100%', maxWidth: '200px' }} src={ Quadrifoglio } alt='Logo Quadrifoglio' />
+              <div className="container-logo" >
+                <img style={{ width: '100%', maxWidth: '200px' }} src={ Quadrifoglio } alt='Logo Quadrifoglio' />
+              </div>
             </div>
             <div className="image-square">
               <img src={_2017} alt="Grupo Requiez - 2017" />
@@ -374,7 +384,9 @@ export default function TimeLine() {
                   marca Interface.
                 </p>
               </div>
-              <img style={{ width: '100%', maxWidth: '200px' }} src={ Interface } alt='Logo Interface' />
+              <div className="container-logo" style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+                <img style={{ width: '100%', maxWidth: '150px' }} src={ Interface } alt='Logo Interface' />
+              </div>
             </div>
             <div className="image-square">
               <img src={_2019} alt="Grupo Requiez - 2019" />
