@@ -158,6 +158,18 @@ const Contact = () => {
               <a href="tel:5527909519">+52 (55) 2790 9519</a>
             </p>
           </div>
+          <div>
+          
+            <h4>MTY</h4>
+            <p>
+              IZZ Business Centers<br/>
+              Ricardo Margáin #335,<br/>
+              Col. Valle del Campestre<br/>
+              Torre 1, piso 5,<br/>
+              San Pedro García, N.L.<br/>
+              C.P. 66264
+            </p>
+          </div>
         </section>
       </main>
     </div>
