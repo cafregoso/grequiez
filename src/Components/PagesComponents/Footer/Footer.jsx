@@ -64,7 +64,7 @@ export default function Footer() {
                   fontWeight: 'bold',
                   color: 'var(--color-verdeoscuro)'
                 }}>
-                Visíta nuestra tienda en línea
+                Visita nuestra tienda en línea
               </button>
             </a>
             <span style={{ height: '100%', display: 'grid', placeItems: 'center' }}>
