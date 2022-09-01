@@ -162,7 +162,7 @@ const Contact = () => {
           
             <h4>MTY</h4>
             <p>
-              IZZ Business Centers<br/>
+              IZA Business Centers EQQUS 335<br/>
               Ricardo Margáin #335,<br/>
               Col. Valle del Campestre<br/>
               Torre 1, piso 5,<br/>
