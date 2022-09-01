@@ -249,8 +249,8 @@ export default function TimeLine() {
               <div className="container-p">
                 <p className="vertical-timeline-element-p">
                   Se incorpora línea de
-                  sillería japonesa
-                  <b>Okamura</b>
+                  sillería japonesa 
+                  <b> Okamura</b>
                 </p>
               </div>
               <div className="container-logo">

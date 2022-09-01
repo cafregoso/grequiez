@@ -19,7 +19,7 @@ export default function ESR() {
           name='Causas Sociales'
           image={ causas }
           info='Grupo Requiez colabora activamente en causas sociales
-          con el objetivo de mejorar la calidad de vida las personas
+          con el objetivo de mejorar la calidad de vida de las personas
           que lo necesitan, como por ejemplo terapias para
           niños en el CRIT de Teletón.'
           color='#FFF'
@@ -35,16 +35,11 @@ export default function ESR() {
         <SpaceRight
           name='Healthy Life'
           image={ healthy }
-          info='Programa con enfoque al personal interno de Grupo Requiez,
-          con el objetivo de promover y gestionar el bienestar
-          emocional y físico de los colaboradores.
-          Se trata de una revisión mes a mes con la asistencia de
-          un profesional de la salud de los signos básicos; toma de
-          glucosa, presión arterial, control de peso, así mismo la
-          implementación de actividades para promover la actividad
-          física de acuerdo con sus espacios y tiempos disponibles,
-          compartiendo tips de alimentación y actividad
-          física básica para la creación de un hábito.'
+          info='Este programa tiene el objetivo de promover y gestionar 
+          el bienestar emocional y físico de los colaboradores. 
+          Se promueven buenos hábitos de salud como la actividad física 
+          y una buena alimentación, además de estar al cuidado de la 
+          presión arterial, glucosa, vacunas y exámenes de la vista.'
           color='#FFF'
         />
       </div>

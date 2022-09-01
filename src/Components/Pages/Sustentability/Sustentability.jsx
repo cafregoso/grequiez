@@ -71,8 +71,8 @@ export default function Sustentability() {
             <p>
               Favoreces el reciclaje y la reutilización de materiales
               brindando una segunda vida al producto, cuentas con la
-              oportunidad de ver la variedad de productos con los que
-              contamos, además de adquirir diseños diferentes,
+              oportunidad de ver la variedad de productos que 
+              manejamos, además de adquirir diseños diferentes,
               variedad de colores y estilos tanto tradicionales como
               innovadores.
               <br />

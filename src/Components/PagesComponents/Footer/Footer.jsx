@@ -9,6 +9,7 @@ import li from "../../../assets/LOGOS/li.webp";
 import tt from "../../../assets/LOGOS/tt.png";
 
 import logo from "../../../assets/logo_footer.png";
+import carrito from "../../../assets/carrito.png";
 
 import BlogDataService from "../../../services/services";
 
@@ -37,12 +38,39 @@ export default function Footer() {
       <div className="coryright">
         <div className="div">
           <img style={{ width: '220px' }} src={ logo } alt="Grupo Requiez Logo" />
-          <p style={{ marginTop: '20px ' }}>AVISO DE PRIVACIDAD</p>
+          <p style={{ marginTop: '20px ' }}>
+            <a
+              href="/files/aviso_privacidad_grupo_requiez.pdf"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: '#FFF', textDecoration: 'none' }}
+            >
+              AVISO DE PRIVACIDAD
+            </a>
+          </p>
           <p>
             Copyright ©2022 All rights reserved
             <br />
             Grupo Requiez
           </p>
+          <div className="tienda-gruporequiez" style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <a href="https://tienda.gruporequiez.com/" rel='noreferrer' target='_blank'>
+              <button style={{ 
+                  height: '30px',
+                  width: '210px',
+                  border: 'none',
+                  cursor: 'pointer',
+                  borderRadius: '15px',
+                  fontWeight: 'bold',
+                  color: 'var(--color-verdeoscuro)'
+                }}>
+                Visíta nuestra tienda en línea
+              </button>
+            </a>
+            <span style={{ height: '100%', display: 'grid', placeItems: 'center' }}>
+              <img style={{ height: '25px' }} src={carrito} alt="Grupo Requiez - Tienda en Linea" />
+            </span>
+          </div> 
         </div>
       </div>
       <div className="contact-info">

@@ -20,7 +20,7 @@ footer {
 }
 
 .coryright p {
-    margin: 50px 0;
+    margin: 30px 0;
     color: #FFF;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -97,7 +97,7 @@ footer {
     }
 
     .coryright * {
-        margin: 0 !important;
+        margin: 8px 0 !important;
     }
 
     .contact-info * {
