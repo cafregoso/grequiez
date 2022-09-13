@@ -35,7 +35,7 @@ const Contact = () => {
       message: '',
     },
     onSubmit: values => {
-        axios.post("https://api.atoyacci.com/sendmail/", values)
+        axios.post("https://api.gruporequiez.com/sendmail/", values)
         .then(response => {
           if (response.status === 200) {
             setMessage(response.data)
