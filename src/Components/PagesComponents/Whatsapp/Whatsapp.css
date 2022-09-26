@@ -1,0 +1,58 @@
+.SsbContainer {
+    position: fixed;
+    top: 30%;
+    z-index: 1;
+    right: -108px;
+}
+
+.ssb-btns-right {
+    z-index: 99999;
+    right: 0;
+}
+
+.ssb-btns-right ul {
+    padding: 0;
+    margin: 0;
+}
+
+.ssb-btns-right ul li {
+    line-height: 45px;
+    list-style: none;
+    margin: 0;
+    right: 0px;
+    position: relative;
+    transition: all 250ms;
+    border-radius: 10px 0 0 10px;
+}
+
+.ssb-btns-right ul li:hover {
+    line-height: 45px;
+    list-style: none;
+    margin: 0;
+    right: 108px;
+}
+
+.ssb-btns-right ul li a {
+    padding: 0 15px 0 0;
+    display: block;
+    line-height: 45px;
+    text-align: left;
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+}
+
+.ssb-btns-right ul li span {
+    line-height: 45px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.fa-whatsapp img {
+    width: 24px;
+    margin-bottom: 0px;
+}
+
+#ssb-btn-0 {
+    background: #23d244;
+}

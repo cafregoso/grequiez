@@ -14,6 +14,7 @@ import Signup from "./Components/Pages/Signup/Signup"
 import AddPost from "./Components/Pages/AddPost/AddPost"
 
 import BlogDataService from "./services/services"
+import Whatsapp from "./Components/PagesComponents/Whatsapp/Whatsapp"
 
 function App() {
   const [user, setUser] = useState(!localStorage.getItem('user') ? null : localStorage.getItem('user'))
@@ -62,16 +63,41 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Layout />} className="App">
-            <Route index element={<Home />} />
-            <Route path="esr/" element={<ESR />} />
+            <Route index element={
+              <div>
+                <Whatsapp />
+                <Home />
+              </div>
+            } />
+            <Route path="esr/" element={
+              <div>
+                <Whatsapp />
+                <ESR />
+              </div>
+            } />
             <Route path="history/" element={<History />} />
-            <Route path="sustentability/" element={<Sustentability />} />
-            <Route path="blog/" element={<Blog token={ token } user={ user } logout={ logout } />} />
-            <Route path="addpost/" element={<AddPost token={ token } user={ user } />} />
+            <Route path="sustentability/" element={
+              <div>
+                <Whatsapp />
+                <Sustentability />
+              </div>
+            } />
+            <Route path="blog/" element={
+              <div>
+                <Whatsapp />
+                <Blog token={ token } user={ user } logout={ logout } />
+              </div>
+            } />
+            {/* <Route path="addpost/" element={<AddPost token={ token } user={ user } />} /> */}
             <Route path="blog/:id/" element={<BlogPost token={ token } user={ user } logout={ logout } />} />
-            <Route path="contact/" element={<Contact />} />
-            <Route path="login/" element={<Login login={ login } />} />
-            <Route path="signup-rqz/" element={<Signup signup={ signup } />} />
+            <Route path="contact/" element={
+              <div>
+                <Whatsapp />
+                <Contact />
+              </div>
+            } />
+            {/* <Route path="login/" element={<Login login={ login } />} />
+            <Route path="signup-rqz/" element={<Signup signup={ signup } />} /> */}
           </Route>
         </Routes>
       </Router>
