@@ -14,6 +14,7 @@ import carrito from "../../../assets/carrito.png";
 import BlogDataService from "../../../services/services";
 
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const [data, setData] = useState({ name: "", email: "" });
@@ -76,6 +77,9 @@ export default function Footer() {
       <div className="contact-info">
         <div className="div">
           <h3>CONTACTO</h3>
+          <p className="contact-mail">
+            <Link to='/work'>Trabaja con nosotros</Link>
+          </p>
           <p className="contact-mail">
             <a href="mailto:hola@gruporequiez.com">hola@gruporequiez.com</a>
           </p>

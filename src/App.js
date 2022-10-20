@@ -9,9 +9,7 @@ import Sustentability from "./Components/Pages/Sustentability/Sustentability"
 import Blog from './Components/Pages/Blog/Blog'
 import BlogPost from './Components/Pages/BlogPost/BlogPost'
 import Contact from './Components/Pages/Contact/Contact'
-import Login from "./Components/Pages/Login/Login"
-import Signup from "./Components/Pages/Signup/Signup"
-import AddPost from "./Components/Pages/AddPost/AddPost"
+import WorkWithUs from "./Components/Pages/WorkWithUs/WorkWithUs"
 
 import BlogDataService from "./services/services"
 import Whatsapp from "./Components/PagesComponents/Whatsapp/Whatsapp"
@@ -94,6 +92,12 @@ function App() {
               <div>
                 <Whatsapp />
                 <Contact />
+              </div>
+            } />
+            <Route path="work/" element={
+              <div>
+                <Whatsapp />
+                <WorkWithUs />
               </div>
             } />
             {/* <Route path="login/" element={<Login login={ login } />} />
