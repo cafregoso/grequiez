@@ -44,7 +44,7 @@ const WorkWithUs = () => {
     form.append('message', state.message)
     axios({
       method: "POST",
-      url: "http://localhost:8000/work-with-us/",
+      url: "https://api.gruporequiez.com/work-with-us/",
       data: form,
       headers: { "Content-Type": "multipart/form-data" },
     })
