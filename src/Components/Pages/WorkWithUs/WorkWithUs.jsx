@@ -39,6 +39,7 @@ const WorkWithUs = () => {
   }
 
   const handleSubmit = (e) => {
+    e.preventDefault()
     form.append('name', state.name)
     form.append('email', state.email)
     form.append('message', state.message)
